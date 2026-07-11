@@ -1,0 +1,134 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-optical-sizing: auto;
+}
+body {
+  background-color: #172546;
+  display: flex;
+  gap: 20px;
+}
+nav {
+  color: white;
+  font-size: 18px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav #my-dashboard {
+  font-size: 25px;
+}
+nav .nav-header {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.nav-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 40px;
+}
+.nav-links i {
+  font-size: 25px;
+}
+/* FOR SELECTION OF NAV BAR  */
+.nav-buttons:nth-child(1) {
+  background-color: #5151f1;
+  border-radius: 10px;
+}
+.profile {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border: solid rgba(255, 255, 255, 0.26) 1px;
+  border-radius: 10px;
+  padding: 12px 15px;
+}
+.profile-initial {
+  background-color: #5151f1;
+  padding: 12px 16px;
+  border-radius: 50%;
+}
+main {
+  background-image: url(./ChatGPT\ Image\ Jul\ 11\,\ 2026\,\ 05_05_25\ PM.png);
+  background-size: cover;
+  width: calc(100% - 275px);
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding: 40px 35px;
+}
+.dashboard-head{
+    width: 100%;
+    padding: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.dashboard-head h2{
+    font-size: 35px;
+    font-weight: 450;
+}
+.dashboard-head-greet{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    color: rgba(0, 0, 0, 0.699);
+}
+.dashboard-head-func{
+    display: flex;
+    gap: 15px;
+    height: 100%;
+}
+.date-time{
+    height: 100%;
+    background-color: #F7F8FB;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 18px;
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+.date-time i{
+    color: #5895FA;
+    font-size: 35px;
+}
+.date-time-texts{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+.date-time-texts .day-date{
+    color: rgba(0, 0, 0, 0.644);
+}
+.date-time-texts #time{
+    font-size: 35px;
+}
+.theme-selection{
+    padding: 15px 40px;
+    background-color: #F7F8FB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 35px;
+    border-radius: 15px;
+
+}
