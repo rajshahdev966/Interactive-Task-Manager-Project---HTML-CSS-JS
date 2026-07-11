@@ -1,121 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Productivity Manager</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
-  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-</head>
-<body>
-
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- LEFT NAVIGATION BAR OF DASHBOARD -->
     <nav>
-        <div class="nav-header">
-            <span id="my-dashboard">My Dashboard</span>
-            <!-- NAVIGATION LINKS AND BUTTON  -->
-            <div class="nav-links">
-                <div class="nav-buttons"><i class="ri-home-4-line"></i> <span>Dashboard</span></div>
-                <div class="nav-buttons"><i class="ri-calendar-2-line"></i> <span>Planner</span></div>
-                <div class="nav-buttons"><i class="ri-todo-line"></i> <span>To-Do List</span></div>
-                <div class="nav-buttons"><i class="ri-settings-4-line"></i> <span>Settings</span></div>
-            </div>
+      <div class="nav-header">
+        <span id="my-dashboard">My Dashboard</span>
+        <!-- NAVIGATION LINKS AND BUTTON  -->
+        <div class="nav-links">
+          <div class="nav-buttons">
+            <i class="ri-home-4-line"></i> <span>Dashboard</span>
+          </div>
+          <div class="nav-buttons">
+            <i class="ri-calendar-2-line"></i> <span>Planner</span>
+          </div>
+          <div class="nav-buttons">
+            <i class="ri-todo-line"></i> <span>To-Do List</span>
+          </div>
+          <div class="nav-buttons">
+            <i class="ri-settings-4-line"></i> <span>Settings</span>
+          </div>
         </div>
+      </div>
 
-        <!-- PROFILE SECCTION  -->
-        <div class="profile">
-                <div class="profile-initial"><span>R</span></div>
-                <span id="profile-name">Raj Shah</span>
-        </div>
+      <!-- PROFILE SECCTION  -->
+      <div class="profile">
+        <div class="profile-initial"><span>R</span></div>
+        <span id="profile-name">Raj Shah</span>
+      </div>
     </nav>
 
     <main>
-        <!-- HEAD SECTION OF DASHBOARD -->
+      <!-- HEAD SECTION OF DASHBOARD -->
 
-        <div class="dashboard-head">
-
-            <!-- GREETINGS IN HEAD SECTION  -->
-            <div class="dashboard-head-greet">
-                <h2>Good <span id="time-greet">Evening</span> <span id="profile-first-name">Raj </span><span id="wave">👋</span></h2>
-                <p>Stay focused, Stay Motivated</p>
-            </div>
-            
-            <div class="dashboard-head-func">
-                <!-- DATE TIME SECTION IN HEAD SECTION  -->
-                <div class="date-time">
-                        <div><i class="ri-calendar-line"></i></div>
-                        <div class="date-time-texts">
-                            <p class="day-date"><span id="day">Wednesday</span>, <span id="date">7 July 2025</span></p>
-                            <p><span id="time">07:45</span> <span id="am-pm"> AM</span> </p>
-                        </div>
-                </div>
-                <!-- THEME SECTION -->
-                <div class="theme-selection">
-                    <span style="color: #FDBE51;"><i class="ri-sun-line"></i></span>
-                    <span><i class="ri-toggle-line"></i></span>
-                    <!-- MAKE IT class = "ri-toggle-fill" to make it towards moon side -->
-                    <span style="color: #D2D6E0;"><i class="ri-moon-fill"></i></span>
-                </div>
-            </div>
+      <div class="dashboard-head">
+        <!-- GREETINGS IN HEAD SECTION  -->
+        <div class="dashboard-head-greet">
+          <h2>
+            Good <span id="time-greet">Evening</span>
+            <span id="profile-first-name">Raj </span><span id="wave">👋</span>
+          </h2>
+          <p>Stay focused, Stay Motivated</p>
         </div>
 
-        <!-- TO-DO LIST SECTION -->
-
-        <div class="to-do-list">
-            <div class="todo-head">
-                <i class="ri-todo-line"></i>
-                <h2>Todo List</h2>
+        <div class="dashboard-head-func">
+          <!-- DATE TIME SECTION IN HEAD SECTION  -->
+          <div class="date-time">
+            <div><i class="ri-calendar-line"></i></div>
+            <div class="date-time-texts">
+              <p class="day-date">
+                <span id="day">Wednesday</span>,
+                <span id="date">7 July 2025</span>
+              </p>
+              <p><span id="time">07:45</span> <span id="am-pm"> AM</span></p>
             </div>
-            <div class="todo-form">
-                <form>
-                    <input type="text" placeholder="Add a new task...">
-                    <button><i class="ri-add-large-fill"></i></button>
-                </form>
-            </div>
-            <div class="todo-task-collection">
-                <div class="todo-task">
-                    <i class="ri-checkbox-blank-circle-line"></i>
-                    <!-- Make it checkbox-circle-line to make it filled -->
-                     <span>Complete DSA Practice</span>
-                     <i class="ri-delete-bin-line"></i>
-                </div>
-                <div class="todo-task">
-                    <i class="ri-checkbox-blank-circle-line"></i>
-                    <!-- Make it checkbox-circle-line to make it filled -->
-                     <span>Complete DSA Practice</span>
-                     <i class="ri-delete-bin-line"></i>
-                </div>
-                <div class="todo-task">
-                    <i class="ri-checkbox-blank-circle-line"></i>
-                    <!-- Make it checkbox-circle-line to make it filled -->
-                     <span>Complete DSA Practice</span>
-                     <i class="ri-delete-bin-line"></i>
-                </div>
-                <div class="todo-task">
-                    <i class="ri-checkbox-blank-circle-line"></i>
-                    <!-- Make it checkbox-circle-line to make it filled -->
-                     <span>Complete DSA Practice</span>
-                     <i class="ri-delete-bin-line"></i>
-                </div>
-
-            </div>
-            <div class="todo-completion-status">
-                <p><span id="completed-todo-tasks">1</span> of <span id="total-todo-tasks">5</span> tasks completed</p>
-                <div class="todo-total-timeline">
-                    <div class="todo-done-timeline"></div>
-                </div>
-            </div>
-
+          </div>
+          <!-- THEME SECTION -->
+          <div class="theme-selection">
+            <span style="color: #fdbe51"><i class="ri-sun-line"></i></span>
+            <span><i class="ri-toggle-line"></i></span>
+            <!-- MAKE IT class = "ri-toggle-fill" to make it towards moon side -->
+            <span style="color: #d2d6e0"><i class="ri-moon-fill"></i></span>
+          </div>
         </div>
+      </div>
 
-        Pomodoro Timer
+      <!-- TO-DO LIST SECTION -->
+
+      <div class="to-do-list">
+        <div class="todo-head">
+          <i class="ri-todo-line"></i>
+          <h2>Todo List</h2>
+        </div>
+        <div class="todo-form">
+          <form>
+            <input type="text" placeholder="Add a new task..." />
+            <button><i class="ri-add-large-fill"></i></button>
+          </form>
+        </div>
+        <div class="todo-task-collection">
+          <div class="todo-task">
+            <i class="ri-checkbox-blank-circle-line"></i>
+            <!-- Make it checkbox-circle-line to make it filled -->
+            <span>Complete DSA Practice</span>
+            <i class="ri-delete-bin-line"></i>
+          </div>
+          <div class="todo-task">
+            <i class="ri-checkbox-blank-circle-line"></i>
+            <!-- Make it checkbox-circle-line to make it filled -->
+            <span>Complete DSA Practice</span>
+            <i class="ri-delete-bin-line"></i>
+          </div>
+          <div class="todo-task">
+            <i class="ri-checkbox-blank-circle-line"></i>
+            <!-- Make it checkbox-circle-line to make it filled -->
+            <span>Complete DSA Practice</span>
+            <i class="ri-delete-bin-line"></i>
+          </div>
+          <div class="todo-task">
+            <i class="ri-checkbox-blank-circle-line"></i>
+            <!-- Make it checkbox-circle-line to make it filled -->
+            <span>Complete DSA Practice</span>
+            <i class="ri-delete-bin-line"></i>
+          </div>
+        </div>
+        <div class="todo-completion-status">
+          <p>
+            <span id="completed-todo-tasks">1</span> of
+            <span id="total-todo-tasks">5</span> tasks completed
+          </p>
+          <div class="todo-total-timeline">
+            <div class="todo-done-timeline"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pomodoro Timer -->
+      <div class="pomo-timer">
+        <div class="pomo-timer-head">
+          <i class="ri-timer-line"></i>
+          <h2>Pomodoro Timer</h2>
+        </div>
+        <div class="pomo-timer-option">
+          <span>Pomodoro</span>
+          <span>Short Break</span>
+        </div>
+        <div class="timer">
+          <span>25:00</span>
+          <p>Focus Time</p>
+        </div>
+        <button id="pomo-start"><i class="ri-play-fill"></i> Start</button>
+        <span>Stay focused. You got this! 💪</span>
+      </div>
+
+      <!-- MOTIVATIONAL QUOTE SECTION  -->
+
+      
     </main>
-
-</body>
+  </body>
 </html>
