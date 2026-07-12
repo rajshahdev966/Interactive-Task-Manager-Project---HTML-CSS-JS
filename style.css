@@ -347,3 +347,8 @@ main {
     background-color: #F35362;
     border: none;
 }
+.pomo-timer-option{
+    display: flex;
+    justify-content: space-around;
+    
+}
