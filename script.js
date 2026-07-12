@@ -31,37 +31,30 @@ const amPm = document.querySelector("#am-pm")
 
 let updateTimeAndDate = ()=>{
     const now = new Date();
-
     const timeInfo = now.toLocaleTimeString('en-US', {
         timeZone: 'Asia/Kolkata',
         hour: '2-digit',
         minute:  '2-digit',
         hour12: true,
     })
-
     const dateInfo = now.toDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
     })
 
-    const dayInfo = now.toDateString('en-US', {
-        weekday: 'long'
-    })
-
-    console.log(dayInfo);
-    console.log(dateInfo);
-    console.log(timeInfo);
-    
     const dayInfoArr = dateInfo.split(" ")
-    const 
+    const timeInfoArr = timeInfo.split(" ")
 
     dayUI.innerHTML = `${dayInfoArr[0]}day`
     dateUI.innerHTML = `${dayInfoArr[2]} ${dayInfoArr[1]} ${dayInfoArr[3]}`
+    timeUI.innerHTML = `${timeInfoArr[0]}`
+    amPm.innerHTML = ` ${timeInfoArr[1]}`
 
 
 }
 updateTimeAndDate();
+
 
 
 // LOGIN SECTION LOGIC CODE 
