@@ -226,6 +226,12 @@ main {
 .todo-task-collection .todo-task{
     padding: 8px;
     border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-task i{
+    font-size: 18px;
 }
 
 
