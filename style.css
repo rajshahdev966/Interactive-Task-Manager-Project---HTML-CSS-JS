@@ -29,7 +29,8 @@ section{
     align-items: center;
     height: 100%;
     width: 100%;
-    
+    background-image: url(./ChatGPT\ Image\ Jul\ 11\,\ 2026\,\ 05_05_25\ PM.png);
+    background-size: cover;
 
 }
 section form{
@@ -37,6 +38,11 @@ section form{
     display: flex;
     flex-direction: column;
 
+
+}
+.login-form{
+    background-color: #3587FD;
+    padding: 20px;
 }
 
 /* NAVIGATION BAR STYLING */
