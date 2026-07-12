@@ -30,14 +30,36 @@ const amPm = document.querySelector("#am-pm")
 
 const taskAddForm = document.querySelector("#todo-task-add-form")
 const newTaskInput = document.querySelector("#task-input")
-const taskAddButton = document.querySelector("#task=add-button")
+const taskAddButton = document.querySelector("#task-add-button")
 const taskCollection = document.querySelector(".todo-task-collection")
 const deleteButton = document.querySelector(".ri-delete-bin-line")
 const checkBox = document.querySelector("#checkbox")
-let taskCollectionArr = [];
+let taskCollectionArr = [
+    "Complete DSA Practice",
+    "Go to GYM",
+    "Go to JEE Practice",
+];
 
 
-taskAddButton.addEventListener('submit', ()=>{
+let taskUpdateUI = ()=>{
+    taskCollectionArr.forEach((elem, index)=>{
+        taskCollection.innerHTML += `
+        <div class="todo-task">
+                  <div>
+                      <i class="ri-checkbox-blank-circle-line" id="checkbox"></i>
+                      <!-- Make it checkbox-circle-line to make it filled -->
+                      <span>${elem}</span>
+                  </div>
+                  <i class="ri-delete-bin-line"></i>
+                </div>`
+    })
+}
+taskUpdateUI();
+
+taskAddForm.addEventListener('submit', (events)=>{
+    events.preventDefault();
+    if(newTaskInput.trim() === "") return;
+
 
 })
 
@@ -48,17 +70,17 @@ taskAddButton.addEventListener('submit', ()=>{
 
 // LOGIN SECTION LOGIC CODE 
 
-let profileUpdate;
 
-if(userName){
-    loginSection.style.display = "none"
-    profileUpdate();
-}
-profileUpdate = ()=>{
+let profileUpdate = ()=>{
     profileInitial.innerHTML = `<span>${userName[0]}</span>`
     profileName.innerHTML = `${userName}`
     profileFirstName.innerHTML = `${userName.split(" ")[0]}`
     
+}
+
+if(userName){
+    loginSection.style.display = "none"
+    profileUpdate();
 }
 
 loginForm.addEventListener('submit', (events)=>{
