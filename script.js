@@ -23,7 +23,13 @@ const profileName = document.querySelector("#profile-name")
 let updateTimeAndDate = ()=>{
     const now = new Date();
 
-    const liveTime 
+    const timeInfo = now.toLocaleTimeString('en-US', {
+        hour: '2-digit',
+        minute:  '2-digit',
+        hour12: true,
+        
+
+    })
 }
 
 
