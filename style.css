@@ -204,7 +204,8 @@ main {
     border: 1px solid rgba(0, 0, 0, 0.466);
     padding: 7px 10px;
     border-radius: 5px;
-    width: 100%;
+    /* width: 100%; */
+    flex: 1;
     
 }
 .todo-form button{
