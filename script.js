@@ -40,7 +40,8 @@ let taskCollectionArr = [
     "Go to JEE Practice",
 ];
 let deleteTask;
-
+let taskCheck;
+let 
 
 let taskUpdateUI = ()=>{
     taskCollection.innerHTML = ""
@@ -48,7 +49,7 @@ let taskUpdateUI = ()=>{
         taskCollection.innerHTML += `
         <div class="todo-task">
                   <div>
-                      <i class="ri-checkbox-blank-circle-line" id="checkbox"></i>
+                      <i class="ri-checkbox-blank-circle-line" id="checkbox" onclick="taskCheck(${index})"></i>
                       <!-- Make it checkbox-circle-line to make it filled -->
                       <span>${elem}</span>
                   </div>
@@ -71,7 +72,9 @@ deleteTask = (index)=>{
     taskUpdateUI();
 }
 
+taskCheck = (index)=>{
 
+}
 
 
 
