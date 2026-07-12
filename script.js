@@ -1,7 +1,7 @@
 
 
 const loginForm = document.querySelector('form')
-cosnt loginSection = document.querySelector('section')
+const loginSection = document.querySelector('section')
 const name = document.querySelector("#user-name")
 const loginBtn = document.querySelector("#login-button")
 let userName;
