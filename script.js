@@ -20,7 +20,11 @@ const profileInitial = document.querySelector(".profile-initial")
 const profileName = document.querySelector("#profile-name")
 
 // TIME AND DATE SECTION CONSTANT AND VARIABLE DECLARATION 
+let updateTimeAndDate = ()=>{
+    const now = new Date();
 
+    const liveTime 
+}
 
 
 // LOGIN SECTION LOGIC CODE 
