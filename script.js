@@ -6,7 +6,9 @@ const loginForm = document.querySelector('form')
 const loginSection = document.querySelector('.name-form')
 const name = document.querySelector("#user-name")
 const loginBtn = document.querySelector("#login-button")
+const profileFirstName = document.querySelector("#profile-first-name")
 let userName = localStorage.getItem('userName');
+
 
 // NAVIGATION BAR CONSTANT AND VARIABLE DECLARATION 
 const navLinks = document.querySelectorAll(".nav-buttons")
@@ -26,6 +28,8 @@ const profileName = document.querySelector("#profile-name")
 let profileUpdate = ()=>{
     profileInitial.innerHTML = `<span>${userName[0]}</span>`
     profileName.innerHTML = `${userName}`
+    profileFirstName.innerHTML = `${userName.split(" ")[0]}`
+    
 }
 if(userName){
     loginSection.style.display = "none"
