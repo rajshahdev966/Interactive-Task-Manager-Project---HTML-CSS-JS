@@ -14,8 +14,8 @@ const settingButton = navLinks[3]
 loginForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     userName = name.value;
-    localStorage.setItem('userName', userName)
     loginSection.style.display = "none"
+    localStorage.setItem('userName', userName)
 })
 
 
