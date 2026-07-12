@@ -151,7 +151,6 @@ main {
 /* MID SECTION OF DASHBOARD  */
 
 .dashboard-mid{
-    background-color: wheat;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
