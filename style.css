@@ -297,7 +297,6 @@ main {
     border: none;
 }
 .daily-plan-collection{
-    background-color: wheat;
     height: 100%;
     width: 100%;
     padding: 15px 10px;
@@ -308,6 +307,13 @@ main {
 .daily-plan{
     display: flex;
     gap: 10px;
+    text-wrap: none;
+}
+#plan{
+    background-color: rgb(163, 194, 139);
+    padding: 3px 8px;
+    border-radius: 5px;
+
 }
 
 /* MOTIVATIONAL QUOTE SECTION  */
