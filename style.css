@@ -218,6 +218,17 @@ main {
     border: none;
 }
 
+.todo-task-collection{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.todo-task-collection .todo-task{
+    padding: 8px;
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+}
+
+
 
 
 
