@@ -325,6 +325,12 @@ main {
 
 .pomo-timer{
     grid-area: pomo-timer;
-        background-color: #F7F8FB;
+    background-color: #F7F8FB;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px; 
+    border-radius: 20px;
+    /* justify-content: space-between; */
 
 }
