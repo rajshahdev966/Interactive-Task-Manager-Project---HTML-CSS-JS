@@ -134,7 +134,31 @@ main {
 }
 .dashboard-mid{
     background-color: wheat;
+    display: grid;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: ;
-    grid-template-areas: ;
+    grid-template-areas: 
+    "to-do-list daily-planner mot-section pomo-timer"
+    ;
+    padding: 25px;
+    gap: 20px;
+}
+.to-do-list{
+    grid-area: to-do-list;
+    background-color: white;
+}
+.daily-planner{
+    grid-area: daily-planner;
+        background-color: white;
+
+}
+.mot-section{
+    grid-area: mot-section;
+        background-color: white;
+
+}
+.pomo-timer{
+    grid-area: pomo-timer;
+        background-color: white;
+
 }
