@@ -19,7 +19,7 @@ const profileName = document.querySelector("#profile-name")
 
 // TIME AND DATE SECTION CONSTANT AND VARIABLE DECLARATION 
 
-const 
+
 
 // LOGIN SECTION LOGIC CODE 
 
