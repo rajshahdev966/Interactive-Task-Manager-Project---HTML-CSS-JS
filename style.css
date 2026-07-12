@@ -43,6 +43,16 @@ section form{
 .login-form{
     background-color: #3587FD;
     padding: 20px;
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 28px;
+    width: 90%;
+    max-width: 440px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    text-align: left;
 }
 
 /* NAVIGATION BAR STYLING */
