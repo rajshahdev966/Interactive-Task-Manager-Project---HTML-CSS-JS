@@ -1,2 +1,4 @@
-const homeButton = document.querySelector("#my-dashboard")
+const homeButton = document.querySelector(".nav-buttons")
+console.log(homeButton);
+
 
