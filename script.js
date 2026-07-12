@@ -3,15 +3,18 @@
 const loginForm = document.querySelector('form')
 const name = document.querySelector("#user-name")
 const loginBtn = document.querySelector("#login-button")
-const userName = name.value;
+let userName;
 const navLinks = document.querySelectorAll(".nav-buttons")
 const homeButton = navLinks[0]
 const planButton = navLinks[1]
 const todoButton = navLinks[2]
 const settingButton = navLinks[3]
 
-loginBtn.addEventListener('click', ()=>{
-    loginForm.preve
+loginForm.addEventListener('submit', (events)=>{
+    events.preventDefault();
+    userName = name.value;
+    console.log(userName);
+    
 })
 
 
