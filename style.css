@@ -269,11 +269,32 @@ main {
 
 
 
+/* DAILY PLANNER SECTION */
 
 .daily-planner{
     grid-area: daily-planner;
-        background-color: #F7F8FB;
+    background-color: #F7F8FB;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px; 
+    border-radius: 20px;
 
+
+}
+.daily-planner-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.daily-planner-head i{
+    padding: 7px;
+    font-size: 30px;
+    color: white;
+    border-radius: 8px;
+    background-color: #3587FD;
+    border: none;
 }
 
 /* MOTIVATIONAL QUOTE SECTION  */
