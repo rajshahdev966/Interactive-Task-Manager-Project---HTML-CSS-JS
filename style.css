@@ -161,13 +161,56 @@ main {
     padding: 25px;
     gap: 20px;
 }
+.dashboard-mid h2{
+    font-size: 25px;
+}
 
 /* TO-DO LIST SECTION DESIGNING  */
 
 .to-do-list{
     grid-area: to-do-list;
     background-color: #F7F8FB;
-    display: ;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px; 
+    border-radius: 20px;
+}
+.todo-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.todo-head i{
+    padding: 7px;
+    font-size: 30px;
+    color: white;
+    border-radius: 8px;
+    background-color: #5151f1;
+    border: none;
+}
+.todo-form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    background-color: #5895FA;
+    padding: 5px;
+}
+.todo-form input{
+    font-size: 15px;
+    border: 2px solid rgba(0, 0, 0, 0.582);
+    padding: 5px 7px;
+}
+.todo-form button{
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    color: white;
+    border-radius: 8px;
+    background-color: #5151f1;
+    border: none;
 }
 
 
