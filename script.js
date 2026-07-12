@@ -26,8 +26,38 @@ const dateUI = document.querySelector("#date")
 const timeUI = document.querySelector("#time")
 const amPm = document.querySelector("#am-pm")
 
+// TODO LIST CONSTANT AND VARIABLE DECLARATION
+
+const 
 
 
+
+
+// LOGIN SECTION LOGIC CODE 
+
+let profileUpdate = ()=>{
+    profileInitial.innerHTML = `<span>${userName[0]}</span>`
+    profileName.innerHTML = `${userName}`
+    profileFirstName.innerHTML = `${userName.split(" ")[0]}`
+    
+}
+if(userName){
+    loginSection.style.display = "none"
+    profileUpdate();
+}
+
+loginForm.addEventListener('submit', (events)=>{
+    events.preventDefault();
+    userName = name.value;
+    if(userName.trim() === "") return;
+    console.log(userName)
+    loginSection.style.display = "none"
+    localStorage.setItem('userName', userName)
+    profileUpdate();
+    
+})
+
+// TIME AND DATE SECTION LOGIC 
 
 let updateTimeAndDate = ()=>{
     const now = new Date();
@@ -55,33 +85,6 @@ let updateTimeAndDate = ()=>{
 }
 updateTimeAndDate();
 setInterval(updateTimeAndDate, 1000)
-
-
-
-// LOGIN SECTION LOGIC CODE 
-
-let profileUpdate = ()=>{
-    profileInitial.innerHTML = `<span>${userName[0]}</span>`
-    profileName.innerHTML = `${userName}`
-    profileFirstName.innerHTML = `${userName.split(" ")[0]}`
-    
-}
-if(userName){
-    loginSection.style.display = "none"
-    profileUpdate();
-}
-    
-loginForm.addEventListener('submit', (events)=>{
-    events.preventDefault();
-    userName = name.value;
-    if(userName.trim() === "") return;
-    console.log(userName)
-    loginSection.style.display = "none"
-    localStorage.setItem('userName', userName)
-    profileUpdate();
-    
-})
-
 
 
 
