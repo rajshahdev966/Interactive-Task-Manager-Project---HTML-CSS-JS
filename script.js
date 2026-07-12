@@ -73,7 +73,7 @@ deleteTask = (index)=>{
 }
 
 taskCheck = (index)=>{
-    allTask[index].
+    allTask[index].classList.
 }
 
 
