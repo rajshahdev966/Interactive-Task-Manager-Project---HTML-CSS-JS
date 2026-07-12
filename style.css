@@ -20,6 +20,25 @@ body {
 /* ROOT SECTION  */
 
 
+/* ENTRY PAGE LOGIN */
+section{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    
+
+}
+section form{
+    background-color: #3587FD;
+    display: flex;
+    flex-direction: column;
+
+}
+
 /* NAVIGATION BAR STYLING */
 
 nav {
