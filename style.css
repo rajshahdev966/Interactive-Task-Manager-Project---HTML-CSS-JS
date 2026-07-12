@@ -132,3 +132,9 @@ main {
     border-radius: 15px;
 
 }
+.dashboard-mid{
+    background-color: wheat;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: ;
+    grid-template-areas: ;
+}

@@ -80,101 +80,107 @@
         </div>
       </div>
 
-      <!-- TO-DO LIST SECTION -->
+      <!-- MID SECTION OF DASHBOARD -->
 
-      <div class="to-do-list">
-        <div class="todo-head">
-          <i class="ri-todo-line"></i>
-          <h2>Todo List</h2>
-        </div>
-        <div class="todo-form">
-          <form>
-            <input type="text" placeholder="Add a new task..." />
-            <button><i class="ri-add-large-fill"></i></button>
-          </form>
-        </div>
-        <div class="todo-task-collection">
-          <div class="todo-task">
-            <i class="ri-checkbox-blank-circle-line"></i>
-            <!-- Make it checkbox-circle-line to make it filled -->
-            <span>Complete DSA Practice</span>
-            <i class="ri-delete-bin-line"></i>
-          </div>
-          <div class="todo-task">
-            <i class="ri-checkbox-blank-circle-line"></i>
-            <!-- Make it checkbox-circle-line to make it filled -->
-            <span>Complete DSA Practice</span>
-            <i class="ri-delete-bin-line"></i>
-          </div>
-          <div class="todo-task">
-            <i class="ri-checkbox-blank-circle-line"></i>
-            <!-- Make it checkbox-circle-line to make it filled -->
-            <span>Complete DSA Practice</span>
-            <i class="ri-delete-bin-line"></i>
-          </div>
-          <div class="todo-task">
-            <i class="ri-checkbox-blank-circle-line"></i>
-            <!-- Make it checkbox-circle-line to make it filled -->
-            <span>Complete DSA Practice</span>
-            <i class="ri-delete-bin-line"></i>
-          </div>
-        </div>
-        <div class="todo-completion-status">
-          <p>
-            <span id="completed-todo-tasks">1</span> of
-            <span id="total-todo-tasks">5</span> tasks completed
-          </p>
-          <div class="todo-total-timeline">
-            <div class="todo-done-timeline"></div>
-          </div>
-        </div>
-      </div>
+      <div class="dashboard-mid">
+        <!-- TO-DO LIST SECTION -->
 
-      <!-- Pomodoro Timer -->
-      <div class="pomo-timer">
-        <div class="pomo-timer-head">
-          <i class="ri-timer-line"></i>
-          <h2>Pomodoro Timer</h2>
+        <div class="to-do-list">
+          <div class="todo-head">
+            <i class="ri-todo-line"></i>
+            <h2>Todo List</h2>
+          </div>
+          <div class="todo-form">
+            <form>
+              <input type="text" placeholder="Add a new task..." />
+              <button><i class="ri-add-large-fill"></i></button>
+            </form>
+          </div>
+          <div class="todo-task-collection">
+            <div class="todo-task">
+              <i class="ri-checkbox-blank-circle-line"></i>
+              <!-- Make it checkbox-circle-line to make it filled -->
+              <span>Complete DSA Practice</span>
+              <i class="ri-delete-bin-line"></i>
+            </div>
+            <div class="todo-task">
+              <i class="ri-checkbox-blank-circle-line"></i>
+              <!-- Make it checkbox-circle-line to make it filled -->
+              <span>Complete DSA Practice</span>
+              <i class="ri-delete-bin-line"></i>
+            </div>
+            <div class="todo-task">
+              <i class="ri-checkbox-blank-circle-line"></i>
+              <!-- Make it checkbox-circle-line to make it filled -->
+              <span>Complete DSA Practice</span>
+              <i class="ri-delete-bin-line"></i>
+            </div>
+            <div class="todo-task">
+              <i class="ri-checkbox-blank-circle-line"></i>
+              <!-- Make it checkbox-circle-line to make it filled -->
+              <span>Complete DSA Practice</span>
+              <i class="ri-delete-bin-line"></i>
+            </div>
+          </div>
+          <div class="todo-completion-status">
+            <p>
+              <span id="completed-todo-tasks">1</span> of
+              <span id="total-todo-tasks">5</span> tasks completed
+            </p>
+            <div class="todo-total-timeline">
+              <div class="todo-done-timeline"></div>
+            </div>
+          </div>
         </div>
-        <div class="pomo-timer-option">
-          <span>Pomodoro</span>
-          <span>Short Break</span>
-        </div>
-        <div class="timer">
-          <span>25:00</span>
-          <p>Focus Time</p>
-        </div>
-        <button id="pomo-start"><i class="ri-play-fill"></i> Start</button>
-        <span>Stay focused. You got this! 💪</span>
-      </div>
 
-      <!-- MOTIVATIONAL QUOTE SECTION  -->
-      <div class="mot-section">
-        <div class="mot-section-head">
+        <!-- Pomodoro Timer -->
+        <div class="pomo-timer">
+          <div class="pomo-timer-head">
+            <i class="ri-timer-line"></i>
+            <h2>Pomodoro Timer</h2>
+          </div>
+          <div class="pomo-timer-option">
+            <span>Pomodoro</span>
+            <span>Short Break</span>
+          </div>
+          <div class="timer">
+            <span>25:00</span>
+            <p>Focus Time</p>
+          </div>
+          <button id="pomo-start"><i class="ri-play-fill"></i> Start</button>
+          <span>Stay focused. You got this! 💪</span>
+        </div>
+
+        <!-- MOTIVATIONAL QUOTE SECTION  -->
+        <div class="mot-section">
+          <div class="mot-section-head">
             <div><i class="ri-double-quotes-l"></i></div>
             <h2>Motivational Quote</h2>
-        </div>
-        <div class="quote">
+          </div>
+          <div class="quote">
             <div><i class="ri-double-quotes-l"></i></div>
-            <span id="quote-text"> Discipline is choosing between what you are now and what you want most. </span>
+            <span id="quote-text">
+              Discipline is choosing between what you are now and what you want
+              most.
+            </span>
             <span id="quote-writter">-Abraham Lincoln</span>
+          </div>
+        </div>
+        <!-- DAILY PLANNER SECTION -->
+        <div class="daily-planner">
+          <div class="daily-planner-head">
+            <div><i class="ri-calendar-2-line"></i></div>
+            <span>Daily Planner </span>
+          </div>
+
+          <div class="daily-plan-collection">
+            <div class="daily-plan">
+              <span>6:00 a.m.</span>
+              <div id="plan">Morning Routine</div>
+            </div>
+          </div>
         </div>
       </div>
-      <!-- DAILY PLANNER SECTION -->
-         <div class="daily-planner">
-            <div class="daily-planner-head">
-                <div><i class="ri-calendar-2-line"></i></div>
-                <span>Daily Planner </span>
-            </div>
-            
-            <div class="daily-plan-collection">
-                <div class="daily-plan">
-                    <span>6:00 a.m.</span>
-                    <div id="plan">Morning Routine</div>
-                </div>
-            </div>
-        </div>
-    
     </main>
   </body>
 </html>
