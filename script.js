@@ -54,6 +54,7 @@ let updateTimeAndDate = ()=>{
 
 }
 updateTimeAndDate();
+setInterval(updateTimeAndDate, 1000)
 
 
 
