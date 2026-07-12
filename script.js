@@ -12,13 +12,13 @@ const todoButton = navLinks[2]
 const settingButton = navLinks[3]
 
 if(localStorage.getItem('userName') !== null)
-
-loginForm.addEventListener('submit', (events)=>{
-    events.preventDefault();
-    userName = name.value;
-    localStorage.setItem('userName', userName)
-    loginSection.style.display = "none"
-})
+    
+    loginForm.addEventListener('submit', (events)=>{
+        events.preventDefault();
+        userName = name.value;
+        localStorage.setItem('userName', userName)
+        loginSection.style.display = "none"
+    })
 
 
 
