@@ -50,7 +50,14 @@ let updateTimeAndDate = ()=>{
     })
 
     console.log(dayInfo);
+    console.log(dateInfo);
+    console.log(timeInfo);
     
+    const dayInfoArr = dateInfo.split(" ")
+    const 
+
+    dayUI.innerHTML = `${dayInfoArr[0]}day`
+    dateUI.innerHTML = `${dayInfoArr[2]} ${dayInfoArr[1]} ${dayInfoArr[3]}`
 
 
 }
