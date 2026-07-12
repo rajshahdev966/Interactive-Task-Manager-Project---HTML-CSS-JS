@@ -23,10 +23,8 @@ const profileName = document.querySelector("#profile-name")
 const greetTime = document.querySelector("#time-greet")
 const dayUI = document.querySelector("#day")
 const dateUI = document.querySelector("#date")
-
-
-
-
+const timeUI = document.querySelector("#time")
+const amPm = document.querySelector("#am-pm")
 
 
 
@@ -47,8 +45,16 @@ let updateTimeAndDate = ()=>{
         day: 'numeric',
     })
 
+    const dayInfo = now.toDateString('en-US', {
+        day: 'long'
+    })
+
+    console.log(dateInfo);
+    
+
 
 }
+updateTimeAndDate();
 
 
 // LOGIN SECTION LOGIC CODE 
