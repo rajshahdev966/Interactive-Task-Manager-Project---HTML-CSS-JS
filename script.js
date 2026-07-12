@@ -46,10 +46,10 @@ let updateTimeAndDate = ()=>{
     })
 
     const dayInfo = now.toDateString('en-US', {
-        day: 'long'
+        weekday: 'long'
     })
 
-    console.log(dateInfo);
+    console.log(dayInfo);
     
 
 
