@@ -20,6 +20,17 @@ const profileInitial = document.querySelector(".profile-initial")
 const profileName = document.querySelector("#profile-name")
 
 // TIME AND DATE SECTION CONSTANT AND VARIABLE DECLARATION 
+const greetTime = document.querySelector("#time-greet")
+const dayUI = document.querySelector("#day")
+const dateUI = document.querySelector("#date")
+
+
+
+
+
+
+
+
 let updateTimeAndDate = ()=>{
     const now = new Date();
 
@@ -29,6 +40,14 @@ let updateTimeAndDate = ()=>{
         minute:  '2-digit',
         hour12: true,
     })
+
+    const dateInfo = now.toDateString('en-US', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+    })
+
+
 }
 
 
