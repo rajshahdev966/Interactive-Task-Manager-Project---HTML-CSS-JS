@@ -191,22 +191,21 @@ main {
     background-color: #5151f1;
     border: none;
 }
-.todo-form{
+.todo-form{   
+    padding: 5px 0px;
+}
+.todo-form form{
     display: flex;
-    background-color: wheat;
-    align-items: center;
+     align-items: center;
     gap: 5px;
     width: 100%;
-    padding: 5px;
 }
 .todo-form input{
     font-size: 15px;
     border: 1px solid rgba(0, 0, 0, 0.466);
     padding: 7px 10px;
     border-radius: 5px;
-    /* width: 100%; */
-    flex: 1;
-    min-width: 0;
+    width: 100%;
     
 }
 .todo-form button{
@@ -217,7 +216,6 @@ main {
     border-radius: 8px;
     background-color: #5151f1;
     border: none;
-    flex-shrink: 0;
 }
 
 
