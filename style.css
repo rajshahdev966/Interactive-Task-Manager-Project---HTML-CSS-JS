@@ -206,6 +206,7 @@ main {
     border-radius: 5px;
     /* width: 100%; */
     flex: 1;
+    min-width: 0;
     
 }
 .todo-form button{
@@ -216,6 +217,7 @@ main {
     border-radius: 8px;
     background-color: #5151f1;
     border: none;
+    flex-shrink: 0;
 }
 
 
