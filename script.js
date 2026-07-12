@@ -14,6 +14,7 @@ const settingButton = navLinks[3]
 loginForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     userName = name.value;
+    
     console.log(userName);
 
 })
