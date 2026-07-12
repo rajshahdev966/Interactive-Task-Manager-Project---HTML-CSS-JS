@@ -50,7 +50,7 @@ let taskUpdateUI = ()=>{
                       <!-- Make it checkbox-circle-line to make it filled -->
                       <span>${elem}</span>
                   </div>
-                  <i class="ri-delete-bin-line"></i>
+                  <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
     })
 }
@@ -58,8 +58,8 @@ taskUpdateUI();
 
 taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
-    if(newTaskInput.trim() === "") return;
-
+    if(newTaskInput.value.trim() == "") return;
+    taskCollectionArr.push(newTaskInput.value);
 
 })
 
