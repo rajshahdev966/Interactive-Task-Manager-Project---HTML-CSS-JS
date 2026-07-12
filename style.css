@@ -375,10 +375,15 @@ main {
     margin-right: auto;
     font-size: 25px;
     padding: 15px 30px;
-    width:fit-content;
-
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: #F35362;
+    color: white    ;
 
 }
-.timer i{
-    font-size: 55px;
-}
+
