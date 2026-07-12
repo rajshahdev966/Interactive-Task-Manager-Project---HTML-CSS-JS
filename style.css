@@ -280,9 +280,33 @@ main {
 
 .mot-section{
     grid-area: mot-section;
-        background-color: #F7F8FB;
-
+    background-image: url(./ChatGPT\ Image\ Jul\ 12\,\ 2026\,\ 08_27_52\ AM.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px; 
+    border-radius: 20px;
 }
+.mot-section-head{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.mot-section-head i{
+    padding: 7px;
+    font-size: 30px;
+    color: white;
+    border-radius: 8px;
+    background-color: #5151f1;
+    border: none;
+}
+
+
+
+
 .pomo-timer{
     grid-area: pomo-timer;
         background-color: #F7F8FB;
