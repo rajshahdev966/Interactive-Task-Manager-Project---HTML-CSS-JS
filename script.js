@@ -27,6 +27,8 @@ if(userName){
 loginForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     userName = name.value;
+
+    if(userName.trim() === "") return;
     console.log(userName)
     loginSection.style.display = "none"
     localStorage.setItem('userName', userName)
