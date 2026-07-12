@@ -16,11 +16,12 @@ const profileName = document.querySelector("#profile-name")
 
 
 let profileUpdate = ()=>{
-    profileInitial.innerHTML = `<span>${}</span>`
+    profileInitial.innerHTML = `<span>${userName[0]}</span>`
+    profileName.innerHTML = `${userName}`
 }
 if(userName){
     loginSection.style.display = "none"
-
+    profileUpdate();
 }
     
 loginForm.addEventListener('submit', (events)=>{
@@ -29,7 +30,7 @@ loginForm.addEventListener('submit', (events)=>{
     console.log(userName)
     loginSection.style.display = "none"
     localStorage.setItem('userName', userName)
-    
+    profileUpdate();
     
 })
 
