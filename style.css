@@ -23,7 +23,6 @@ body {
 /* ENTRY PAGE LOGIN */
 section{
     position: absolute;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
