@@ -180,6 +180,7 @@ main {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
 
 }
 .todo-head i{
@@ -195,7 +196,6 @@ main {
     background-color: wheat;
     align-items: center;
     gap: 5px;
-    width: 100%;
     width: 100%;
     padding: 5px;
 }
