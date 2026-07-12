@@ -201,12 +201,12 @@ main {
 .todo-form input{
     font-size: 15px;
     border: 2px solid rgba(0, 0, 0, 0.582);
-    padding: 5px 7px;
+    padding: 5px 8px;
 }
 .todo-form button{
     height: 100%;
     padding: 5px;
-    font-size: 15px;
+    font-size: 20px;
     color: white;
     border-radius: 8px;
     background-color: #5151f1;
