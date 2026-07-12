@@ -359,11 +359,9 @@ main {
     width: 250px;
     justify-self: center;
     border-radius: 50%;
-}
-.ongoing-timer-timeline{
-    border: 5px solid black;
-    height: 250px;
-    width: 250px;
-    justify-self: center;
-    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 65px;
 }
