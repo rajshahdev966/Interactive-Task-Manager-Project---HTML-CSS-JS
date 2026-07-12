@@ -34,15 +34,13 @@ section{
 
 }
 section form{
-    background-color: #3587FD;
     display: flex;
     flex-direction: column;
-
+    gap: 24px;
 
 }
 
 .login-form{
-    background-color: #3587FD;
     padding: 20px;
     background: rgba(255, 255, 255, 0.45);
     backdrop-filter: blur(20px);
@@ -56,13 +54,42 @@ section form{
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 24px;
 }
 .login-form h2{
     font-size: 30px;
     color: #3b66c4;
     font-size: 26px;
     font-weight: 600;
+}
+.login-form span{
+    font-size: 18px;
+}
+form input{
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.6);
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    transition: all 0.2s ease;
+}
+form button{
+    width: 100%;
+    padding: 14px;
+    background: #3b66c4;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 /* NAVIGATION BAR STYLING */
