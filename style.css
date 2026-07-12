@@ -160,6 +160,7 @@ main {
     ;
     padding: 25px;
     gap: 20px;
+    height: 600px;
 }
 .dashboard-mid h2{
     font-size: 25px;
@@ -175,6 +176,7 @@ main {
     gap: 15px;
     padding: 20px; 
     border-radius: 20px;
+    justify-content: space-between;
 }
 .todo-head{
     display: flex;
@@ -217,7 +219,11 @@ main {
     background-color: #5151f1;
     border: none;
 }
-
+.to-do-head-task{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .todo-task-collection{
     display: flex;
     flex-direction: column;
