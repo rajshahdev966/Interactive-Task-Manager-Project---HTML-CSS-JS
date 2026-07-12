@@ -38,7 +38,7 @@ let taskCollectionArr = [];
 
 
 taskAddButton.addEventListener('submit', ()=>{
-    
+
 })
 
 
@@ -48,15 +48,17 @@ taskAddButton.addEventListener('submit', ()=>{
 
 // LOGIN SECTION LOGIC CODE 
 
-let profileUpdate = ()=>{
+let profileUpdate;
+
+if(userName){
+    loginSection.style.display = "none"
+    profileUpdate();
+}
+profileUpdate = ()=>{
     profileInitial.innerHTML = `<span>${userName[0]}</span>`
     profileName.innerHTML = `${userName}`
     profileFirstName.innerHTML = `${userName.split(" ")[0]}`
     
-}
-if(userName){
-    loginSection.style.display = "none"
-    profileUpdate();
 }
 
 loginForm.addEventListener('submit', (events)=>{
