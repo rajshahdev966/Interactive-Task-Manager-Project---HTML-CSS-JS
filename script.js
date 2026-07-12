@@ -28,7 +28,20 @@ const amPm = document.querySelector("#am-pm")
 
 // TODO LIST CONSTANT AND VARIABLE DECLARATION
 
-const 
+const taskAddForm = document.querySelector("#todo-task-add-form")
+const newTaskInput = document.querySelector("#task-input")
+const taskAddButton = document.querySelector("#task=add-button")
+const taskCollection = document.querySelector(".todo-task-collection")
+const deleteButton = document.querySelector(".ri-delete-bin-line")
+const checkBox = document.querySelector("#checkbox")
+let taskCollectionArr = [];
+
+
+taskAddButton.addEventListener('submit', ()=>{
+    
+})
+
+
 
 
 
