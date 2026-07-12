@@ -41,7 +41,7 @@ let taskCollectionArr = [
 ];
 let deleteTask;
 let taskCheck;
-let 
+let allTask = document.querySelectorAll(".todo-task")
 
 let taskUpdateUI = ()=>{
     taskCollection.innerHTML = ""
