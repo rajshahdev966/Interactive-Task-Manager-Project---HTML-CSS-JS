@@ -39,9 +39,11 @@ let taskCollectionArr = [
     "Go to GYM",
     "Go to JEE Practice",
 ];
+let deleteTask;
 
 
 let taskUpdateUI = ()=>{
+    taskCollection.innerHTML = ""
     taskCollectionArr.forEach((elem, index)=>{
         taskCollection.innerHTML += `
         <div class="todo-task">
@@ -60,9 +62,14 @@ taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     if(newTaskInput.value.trim() == "") return;
     taskCollectionArr.push(newTaskInput.value);
-
+    taskUpdateUI();
+    taskAddForm.reset();
 })
 
+deleteTask = (index)=>{
+    taskCollectionArr.splice(index, 1);
+    taskUpdateUI();
+}
 
 
 
