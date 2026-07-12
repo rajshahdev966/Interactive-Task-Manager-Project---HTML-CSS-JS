@@ -233,7 +233,17 @@ main {
 .todo-task i{
     font-size: 18px;
 }
-
+.todo-completion-status p{
+    color: rgba(0, 0, 0, 0.616);
+    font-size: 15px;
+    width: 100%;
+}
+.todo-total-timeline{
+    background-color: black;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
 
 
 
