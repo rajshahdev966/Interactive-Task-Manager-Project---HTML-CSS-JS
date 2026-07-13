@@ -255,10 +255,13 @@ const pomoOption2 = document.querySelector(".pomo-option2")
 const pomoTime = document.querySelector("#pomo-time")
 const pomoContext = document.querySelector("#pomo-context")
 const pomoStartButton = document.querySelector("#pomo-start")
+let totalTimeinMin = 45
 
 pomoStartButton.addEventListener('click', ()=>{
-  let timeInSec = 
-  console.log(timeInSec);
+  let totalTime = totalTimeinMin*60
+  const minutes = Math.floor(totalTime / 60)
+  const second = totalTime%60;
+  
   
 })
 
