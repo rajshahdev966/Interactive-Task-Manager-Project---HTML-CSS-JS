@@ -80,7 +80,11 @@ taskUpdateUI();
 taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     if(newTaskInput.value.trim() == "") return;
-    taskCollectionArr.push(newTaskInput.value);
+    taskCollectionArr.push(
+        {
+            text: newTaskInput.value,
+            completed: false,
+        });
     taskUpdateUI();
     taskAddForm.reset();
 })
