@@ -77,9 +77,7 @@ deleteTask = (index)=>{
 allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
-taskCheck = (index)=>{
-
-    
+taskCheck = (index)=>{    
     if(allCheckBox[index].classList.contains("ri-checkbox-blank-circle-line")){
         allCheckBox[index].classList.replace('ri-checkbox-blank-circle-line', 'ri-checkbox-circle-line')
         allTaskText[index].style.textDecoration = "line-through"
@@ -87,7 +85,10 @@ taskCheck = (index)=>{
         allCheckBox[index].classList.replace('ri-checkbox-circle-line', 'ri-checkbox-blank-circle-line')
         allTaskText[index].style.textDecoration = "none"
     }
+
+
 }
+
 
 
 
