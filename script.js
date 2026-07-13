@@ -97,7 +97,8 @@ taskCheck = (index)=>{
     }
 
     allTickCheckBox = document.querySelectorAll(".ri-checkbox-circle-line")
-    doneTimeline.style
+    completedTaskCount.innerHTML = allTickCheckBox.length
+    doneTimeline.style.width = `${((allTickCheckBox.length / taskCollectionArr.length)*100)}%`
 
 }
 
