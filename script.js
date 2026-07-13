@@ -173,4 +173,6 @@ setInterval(updateTimeAndDate, 1000)
 
 
 
+// MOTIVATIONAL QUOTE 
+
 
