@@ -61,8 +61,6 @@ let taskUpdateUI = ()=>{
 }
 taskUpdateUI();
 
-allCheckBox = document.querySelectorAll("#checkbox")
-allTaskText = document.querySelectorAll("#task-text")
 
 taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
@@ -76,6 +74,8 @@ deleteTask = (index)=>{
     taskCollectionArr.splice(index, 1);
     taskUpdateUI();
 }
+allCheckBox = document.querySelectorAll("#checkbox")
+allTaskText = document.querySelectorAll("#task-text")
 
 taskCheck = (index)=>{
     if(allCheckBox[index].classList.contains("ri-checkBox-blank-circle-line")){
