@@ -255,13 +255,16 @@ const pomoOption2 = document.querySelector(".pomo-option2")
 const pomoTime = document.querySelector("#pomo-time")
 const pomoContext = document.querySelector("#pomo-context")
 const pomoStartButton = document.querySelector("#pomo-start")
-let totalTimeinMin = 45
+let timeLeft = 2700
+let interval;
 
 pomoStartButton.addEventListener('click', ()=>{
-  let totalTime = totalTimeinMin*60
-  const minutes = Math.floor(totalTime / 60)
-  const second = totalTime%60;
-  
+  const mins = Math.floor(timeLeft/60)
+  const seconds = timeLeft%60;
+  pomoTime.innerHTML = `${mins.toString().padStart}`
   
 })
+interval = setInterval(()=>{
+  timeLeft--;
 
+}, 1000)
