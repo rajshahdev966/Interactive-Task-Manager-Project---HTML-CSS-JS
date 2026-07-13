@@ -69,7 +69,6 @@ let taskUpdateUI = ()=>{
     })
 
     totalTaskCount.innerHTML = taskCollectionArr.length
-
     allCheckBox = document.querySelectorAll("#checkbox")
     allTaskText = document.querySelectorAll("#task-text")
 
@@ -99,14 +98,17 @@ allTaskText = document.querySelectorAll("#task-text")
 let allTickCheckBox ;
 completedTaskCount.innerHTML = 0
 
+let checkUpdate = ()=>{
+    allTickCheckBox = document.querySelectorAll(".ri-checkbox-circle-line")
+    completedTaskCount.innerHTML = allTickCheckBox.length
+    doneTimeline.style.width = `${((allTickCheckBox.length / taskCollectionArr.length)*100)}%`
+}
+checkUpdate();
 
 taskCheck = (index)=>{    
     taskCollectionArr[index].completed = !taskCollectionArr[index].completed
     taskUpdateUI();
-    allTickCheckBox = document.querySelectorAll(".ri-checkbox-circle-line")
-    completedTaskCount.innerHTML = allTickCheckBox.length
-    doneTimeline.style.width = `${((allTickCheckBox.length / taskCollectionArr.length)*100)}%`
-
+    checkUpdate();
 }
 
 
