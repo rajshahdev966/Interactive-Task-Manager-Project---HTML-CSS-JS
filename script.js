@@ -78,7 +78,7 @@ allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
 taskCheck = (index)=>{
-    // console.log("Hello");
+
     
     if(allCheckBox[index].classList.contains("ri-checkbox-blank-circle-line")){
         allCheckBox[index].classList.replace('ri-checkbox-blank-circle-line', 'ri-checkbox-circle-line')
