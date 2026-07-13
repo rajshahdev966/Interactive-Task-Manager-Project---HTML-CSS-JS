@@ -257,6 +257,8 @@ const pomoContext = document.querySelector("#pomo-context")
 const pomoStartButton = document.querySelector("#pomo-start")
 
 pomoStartButton.addEventListener('click', ()=>{
-  pomoTime
+  let timeInSec = pomoTime.innerHTML*60
+  console.log(timeInSec);
+  
 })
 
