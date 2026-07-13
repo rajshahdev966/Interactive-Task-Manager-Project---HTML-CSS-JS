@@ -84,12 +84,14 @@ taskAddForm.addEventListener('submit', (events)=>{
             text: newTaskInput.value,
             completed: false,
         });
+    localStorage.setItem('allTasks', taskCollectionArr)
     taskUpdateUI();
     taskAddForm.reset();
 })
 
 deleteTask = (index)=>{
     taskCollectionArr.splice(index, 1);
+    localStorage.setItem('allTasks', taskCollectionArr)
     taskUpdateUI();
 }
 allCheckBox = document.querySelectorAll("#checkbox")
@@ -107,6 +109,7 @@ checkUpdate();
 
 taskCheck = (index)=>{    
     taskCollectionArr[index].completed = !taskCollectionArr[index].completed
+    localStorage.setItem('allTasks', taskCollectionArr)
     taskUpdateUI();
     checkUpdate();
 }
