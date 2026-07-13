@@ -82,10 +82,12 @@ taskCheck = (index)=>{
         allCheckBox[index].classList.replace('ri-checkBox-blank-circle-line', 'ri-checkbox-circle-line')
         allTaskText[index].style.textDecoration = "line-through"
     }else{
-        allCheckBox[index].classList.replace('ri-checkBox-blank-circle-line', 'ri-checkbox-circle-line')
-        allTaskText[index].style.textDecoration = "line-through"
+        allCheckBox[index].classList.replace('ri-checkBox-circle-line', 'ri-checkbox-blank-circle-line')
+        allTaskText[index].style.textDecoration = "none"
     }
 }
+
+
 
 
 
