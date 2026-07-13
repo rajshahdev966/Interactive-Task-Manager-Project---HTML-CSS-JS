@@ -34,11 +34,18 @@ const taskAddButton = document.querySelector("#task-add-button")
 const taskCollection = document.querySelector(".todo-task-collection")
 const deleteButton = document.querySelector(".ri-delete-bin-line")
 const checkBox = document.querySelector("#checkbox")
+const completedTaskCount = document.querySelector("#completed-todo-tasks")
+const totalTaskCount = document.querySelector("#total-todo-tasks")
+const totalTimeline = document.querySelector(".todo-total-timeline")
+const doneTimeline = document.querySelector(".todo-done-timeline")
+
+
 let taskCollectionArr = [
     "Complete DSA Practice",
     "Go to GYM",
     "Go to JEE Practice",
 ];
+
 let deleteTask;
 let taskCheck;
 let allCheckBox;
@@ -77,6 +84,8 @@ deleteTask = (index)=>{
 allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
+let allTickCheckBox;
+
 taskCheck = (index)=>{    
     if(allCheckBox[index].classList.contains("ri-checkbox-blank-circle-line")){
         allCheckBox[index].classList.replace('ri-checkbox-blank-circle-line', 'ri-checkbox-circle-line')
@@ -86,8 +95,11 @@ taskCheck = (index)=>{
         allTaskText[index].style.textDecoration = "none"
     }
 
+    allTickCheckBox = document.querySelectorAll(".ri-checkbox-circle-line")
+
 
 }
+
 
 
 
