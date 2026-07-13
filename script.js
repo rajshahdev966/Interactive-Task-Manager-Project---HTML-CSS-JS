@@ -64,6 +64,7 @@ let taskUpdateUI = ()=>{
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
     })
+    totalTaskCount.innerHTML = taskCollectionArr.length
 
 }
 taskUpdateUI();
