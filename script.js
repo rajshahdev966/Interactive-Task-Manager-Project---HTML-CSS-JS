@@ -44,7 +44,7 @@ const doneTimeline = document.querySelector(".todo-done-timeline")
 let taskCollectionArr = [
     { text: "Complete DSA Practice", completed: false },
     { text: "Go to GYM", completed: false },
-    { text: "Go to JEE Practice", completed: false }
+    { text: "Go to JEE Practice", completed: true }
 ];
 
 let deleteTask;
@@ -59,14 +59,13 @@ let taskUpdateUI = ()=>{
         taskCollection.innerHTML += `
         <div class="todo-task">
                   <div>
-                      <i class="ri-checkbox-blank-circle-line" id="checkbox" onclick="taskCheck(${index})"></i>
+                      <i class="${elem.completed ? 'ri-checkbox-circle-line': 'ri-checkbox-blank-circle-line' }" id="checkbox" onclick="taskCheck(${index})"></i>
                       <!-- Make it checkbox-circle-line to make it filled -->
                       <span id="task-text">${elem.text}</span>
                   </div>
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
         
-        taskCheck(index);
     })
 
     totalTaskCount.innerHTML = taskCollectionArr.length
