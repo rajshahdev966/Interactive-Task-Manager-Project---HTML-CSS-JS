@@ -57,15 +57,15 @@ let taskUpdateUI = ()=>{
                   <div>
                       <i class="ri-checkbox-blank-circle-line" id="checkbox" onclick="taskCheck(${index})"></i>
                       <!-- Make it checkbox-circle-line to make it filled -->
-                      <span class="task-text">${elem}</span>
+                      <span id="task-text">${elem}</span>
                   </div>
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
     })
     totalTaskCount.innerHTML = taskCollectionArr.length
 
-    allCheckBox = document.querySelectorAll(".checkbox")
-    allTaskText = document.querySelectorAll(".task-text")
+    allCheckBox = document.querySelectorAll("#checkbox")
+    allTaskText = document.querySelectorAll("#task-text")
 
 }
 taskUpdateUI();
