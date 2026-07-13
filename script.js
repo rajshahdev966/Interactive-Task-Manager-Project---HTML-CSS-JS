@@ -247,6 +247,7 @@ const pomoOption2 = document.querySelector(".pomo-option2");
 const pomoTime = document.querySelector("#pomo-time");
 const pomoContext = document.querySelector("#pomo-context");
 const pomoStartButton = document.querySelector("#pomo-start");
+
 const pomoFunctions = document.querySelector(".pomo-funcs")
 
 let timeLeft = 2700;
@@ -264,15 +265,28 @@ pomoStartButton.addEventListener("click", () => {
     pomoTime.innerHTML = `${mins.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
   };
 
+  const pomoStopButton = document.querySelector("#pomo-stop")
+  const pomoResetButton = document.querySelector("#pomo-reset")
+
+  pomoStopButton.addEventListener('click', ()=>{
+    clearInterval(interval);
+    pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-play-fill" style="font-size: 28px;"></i> Start</button>`
+
+  })
+
+
+
+
   interval = setInterval(() => {
     if (timeLeft === 0) {
       clearInterval(interval);
       timeLeft = 2700;
       alert("Time's Up!");
       updateTimer();
-      pomoFunctions.innerHTML = ``
+      pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-play-fill" style="font-size: 28px;"></i> Start</button>`
     }
     timeLeft--;
     updateTimer();
   }, 1000);
 });
+
