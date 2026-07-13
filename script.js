@@ -92,7 +92,7 @@ deleteTask = (index)=>{
 allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
-let allTickCheckBox;
+let allTickCheckBox ;
 completedTaskCount.innerHTML = 0
 
 
