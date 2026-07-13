@@ -257,14 +257,25 @@ const pomoContext = document.querySelector("#pomo-context")
 const pomoStartButton = document.querySelector("#pomo-start")
 let timeLeft = 2700
 let interval;
-()=>{
+
+pomoStartButton.addEventListener('click', ()=>{
+  const updateTimer = ()=>{
   const mins = Math.floor(timeLeft/60)
   const seconds = timeLeft%60;
   pomoTime.innerHTML = `${mins.toString().padStart(2, "0")}: ${seconds.toString().padStart(2,"0")}`
   
-})
-interval = setInterval(()=>{
+}
+  interval = setInterval(()=>{
   timeLeft--;
+  updateTimer();
+
+  if(timeLeft === 0){
+    timeLeft = 2700;
+    alert()
+    updateTimer();
+  }
 
 
-}, 1000)
+  }, 1000)
+})
+
