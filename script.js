@@ -97,7 +97,7 @@ taskCheck = (index)=>{
     }
 
     allTickCheckBox = document.querySelectorAll(".ri-checkbox-circle-line")
-
+    doneTimeline.style
 
 }
 
