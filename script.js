@@ -40,6 +40,7 @@ const totalTimeline = document.querySelector(".todo-total-timeline")
 const doneTimeline = document.querySelector(".todo-done-timeline")
 
 
+
 let taskCollectionArr = [
     "Complete DSA Practice",
     "Go to GYM",
@@ -86,6 +87,7 @@ allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
 let allTickCheckBox;
+
 
 taskCheck = (index)=>{    
     if(allCheckBox[index].classList.contains("ri-checkbox-blank-circle-line")){
