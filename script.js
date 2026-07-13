@@ -78,6 +78,8 @@ allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
 taskCheck = (index)=>{
+    // console.log("Hello");
+    
     if(allCheckBox[index].classList.contains("ri-checkBox-blank-circle-line")){
         allCheckBox[index].classList.replace('ri-checkBox-blank-circle-line', 'ri-checkbox-circle-line')
         allTaskText[index].style.textDecoration = "line-through"
