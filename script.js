@@ -47,7 +47,7 @@ let taskCollectionArr = [
     { text: "Go to JEE Practice", completed: true }
 ];
 
-let deleteTask;
+let deleteTask; 
 let taskCheck;
 let allCheckBox;
 let allTaskText
