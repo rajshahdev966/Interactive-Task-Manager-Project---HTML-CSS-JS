@@ -61,7 +61,7 @@ let taskUpdateUI = ()=>{
                   <div>
                       <i class="${elem.completed ? 'ri-checkbox-circle-line': 'ri-checkbox-blank-circle-line' }" id="checkbox" onclick="taskCheck(${index})"></i>
                       <!-- Make it checkbox-circle-line to make it filled -->
-                      <span id="task-text">${elem.text}</span>
+                      <span id="task-text" style="text-decoration: ${elem.completed ? 'line-through' : 'none'}">${elem.text}</span>
                   </div>
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
