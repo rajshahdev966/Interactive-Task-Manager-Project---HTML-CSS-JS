@@ -58,11 +58,11 @@ let taskUpdateUI = ()=>{
                 </div>`
     })
 
-    allCheckBox = document.querySelectorAll("#checkbox")
-    allTaskText = document.querySelectorAll("#task-text")
 }
 taskUpdateUI();
 
+allCheckBox = document.querySelectorAll("#checkbox")
+allTaskText = document.querySelectorAll("#task-text")
 
 taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
