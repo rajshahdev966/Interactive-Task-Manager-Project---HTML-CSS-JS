@@ -259,7 +259,7 @@ let timeLeft = 20
 let interval;
 
 pomoStartButton.addEventListener('click', ()=>{
-  pomoStartButton.isDisabled = true
+  pomoStartButton.disabled = true
   const updateTimer = ()=>{
   const mins = Math.floor(timeLeft/60)
   const seconds = timeLeft%60;
