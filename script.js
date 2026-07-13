@@ -41,7 +41,11 @@ const doneTimeline = document.querySelector(".todo-done-timeline")
 
 
 
-let taskCollectionArr = [];
+let taskCollectionArr = [
+    { text: "Complete DSA Practice", completed: false },
+    { text: "Go to GYM", completed: false },
+    { text: "Go to JEE Practice", completed: false }
+];
 
 let deleteTask;
 let taskCheck;
@@ -57,7 +61,7 @@ let taskUpdateUI = ()=>{
                   <div>
                       <i class="ri-checkbox-blank-circle-line" id="checkbox" onclick="taskCheck(${index})"></i>
                       <!-- Make it checkbox-circle-line to make it filled -->
-                      <span id="task-text">${elem}</span>
+                      <span id="task-text">${elem.text}</span>
                   </div>
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
@@ -75,7 +79,6 @@ taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     if(newTaskInput.value.trim() == "") return;
     taskCollectionArr.push(newTaskInput.value);
-    localStorage.setItem
     taskUpdateUI();
     taskAddForm.reset();
 })
@@ -92,7 +95,7 @@ completedTaskCount.innerHTML = 0
 
 
 taskCheck = (index)=>{    
-    if(allCheckBox[index].classList.contains("ri-checkbox-blank-circle-line")){
+    if(taskCollectionArr[index].completed){
         allCheckBox[index].classList.replace('ri-checkbox-blank-circle-line', 'ri-checkbox-circle-line')
         allTaskText[index].style.textDecoration = "line-through"
     }else{
