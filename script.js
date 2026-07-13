@@ -253,11 +253,15 @@ let timeLeft = 2700;
 let interval;
 
 pomoStartButton.addEventListener("click", () => {
-  pomoFunctions.innerHTML
+  pomoFunctions.innerHTML = `
+          <div style="display: flex; gap: 10px;">
+            <button id="pomo-stop"><i class="ri-square-fill" style="font-size: 25px;"></i> Stop</button>
+            <button id="pomo-reset"><i class="ri-reset-left-line" style="font-size: 25px;"></i> Reset</button>
+          </div>`
   const updateTimer = () => {
     const mins = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-    pomoTime.innerHTML = `${mins.toString().padStart(2, "0")}: ${seconds.toString().padStart(2, "0")}`;
+    pomoTime.innerHTML = `${mins.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
   };
 
   interval = setInterval(() => {
