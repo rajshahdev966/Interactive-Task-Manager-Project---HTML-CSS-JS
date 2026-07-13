@@ -238,5 +238,14 @@ const allMotQuote = [
   }
 ]
 
+const quoteText = document.querySelector("#quote-text")
+const quoteWritter = document.querySelector("#quote-writter")
+
+
+setInterval(()=>{
+    let random = Math.floor(Math.random()*15)
+    quoteText.innerHTML = allMotQuote[random].quote;
+    quoteWritter.innerHTML = `- ${allMotQuote[random].author}`;
+}, 10000)
 
 
