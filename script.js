@@ -45,7 +45,7 @@ let taskCollectionArr = JSON.parse(localStorage.getItem('allTasks')) ?? [];
 
 let deleteTask; 
 let taskCheck;
-let allCheckBox;
+let allCheckBox; 
 let allTaskText
 let statusUpdate
 
