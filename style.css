@@ -229,7 +229,7 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "to-do-list daily-planner mot-section pomo-timer"
+    "to-do-list pomo-timer mot-section  daily-planner"
     ;
     padding: 25px;
     gap: 20px;
