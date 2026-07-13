@@ -51,7 +51,7 @@ let deleteTask;
 let taskCheck;
 let allCheckBox;
 let allTaskText
-let statusUpdate;
+let statusUpdate
 
 let taskUpdateUI = ()=>{
     taskCollection.innerHTML = ""
