@@ -253,5 +253,10 @@ setInterval(()=>{
 const pomoOption1 = document.querySelector(".pomo-option1")
 const pomoOption2 = document.querySelector(".pomo-option2")
 const pomoTime = document.querySelector(".pomo-time")
-const pomo
+const pomoContext = document.querySelector("#pomo-context")
+const pomoStartButton = document.querySelector("#pomo-start")
+
+pomoStartButton.addEventListener('click', ()=>{
+  pomoTime
+})
 
