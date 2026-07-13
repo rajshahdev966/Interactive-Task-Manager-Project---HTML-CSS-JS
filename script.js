@@ -66,6 +66,7 @@ let taskUpdateUI = ()=>{
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
     })
+    taskCheck();
     totalTaskCount.innerHTML = taskCollectionArr.length
 
     allCheckBox = document.querySelectorAll("#checkbox")
