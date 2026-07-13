@@ -73,7 +73,12 @@ deleteTask = (index)=>{
 }
 
 taskCheck = (index)=>{
-    if(allTask)
+    if(checkBox.classList.contains("ri-checkBox-blank-circle-line")){
+        checkBox.classList.replace('ri-checkBox-blank-circle-line', 'ri-checkbox-circle-line')
+        
+    }else{
+
+    }
 }
 
 
