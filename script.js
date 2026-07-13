@@ -250,4 +250,8 @@ setInterval(()=>{
 
 //POMODORO TIMER
 
+const pomoOption1 = document.querySelector(".pomo-option1")
+const pomoOption2 = document.querySelector(".pomo-option2")
+const pomoTime = document.querySelector(".pomo-time")
+const pomo
 

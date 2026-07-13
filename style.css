@@ -478,7 +478,7 @@ main {
     flex-direction: column;
     font-size: 65px;
 }
-#selected{
+.selected{
     color: #F35362;
     font-weight: 500;
     border-bottom: 1px solid #F35362;
