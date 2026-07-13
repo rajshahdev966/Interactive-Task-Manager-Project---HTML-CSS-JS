@@ -177,65 +177,64 @@ setInterval(updateTimeAndDate, 1000)
 
 const allMotQuote = [
   {
-    "quote": "The only way to do great work is to love what you do.",
-    "writer": "Steve Jobs"
+    "quote": "Discipline is choosing between what you are now and what you want most.",
+    "author": "Abraham Lincoln"
   },
   {
-    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-    "writer": "Winston Churchill"
+    "quote": "Success grows quietly from the small promises you keep to yourself each day.",
+    "author": "Robin Sharma"
   },
   {
-    "quote": "In the middle of every difficulty lies opportunity.",
-    "writer": "Albert Einstein"
+    "quote": "Your future is shaped more by your habits than by your hopes or dreams.",
+    "author": "James Clear"
   },
   {
-    "quote": "Be yourself; everyone else is already taken.",
-    "writer": "Oscar Wilde"
+    "quote": "The hardest step toward success is often the decision to begin today.",
+    "author": "John C. Maxwell"
   },
   {
-    "quote": "The future belongs to those who believe in the beauty of their dreams.",
-    "writer": "Eleanor Roosevelt"
+    "quote": "Great achievements are built from ordinary actions repeated with extraordinary consistency.",
+    "author": "Darren Hardy"
   },
   {
-    "quote": "Do what you can, with what you have, where you are.",
-    "writer": "Theodore Roosevelt"
+    "quote": "You become stronger every time you choose progress over comfort and excuses.",
+    "author": "Mel Robbins"
   },
   {
-    "quote": "It always seems impossible until it's done.",
-    "writer": "Nelson Mandela"
+    "quote": "Dreams remain wishes until daily effort transforms them into lasting reality.",
+    "author": "Les Brown"
   },
   {
-    "quote": "Life is what happens when you're busy making other plans.",
-    "writer": "John Lennon"
+    "quote": "Every meaningful victory begins with a mindset that refuses to surrender easily.",
+    "author": "Tony Robbins"
   },
   {
-    "quote": "The journey of a thousand miles begins with a single step.",
-    "writer": "Lao Tzu"
+    "quote": "Confidence is earned by keeping the commitments you make to yourself consistently.",
+    "author": "Brian Tracy"
   },
   {
-    "quote": "Whether you think you can or you think you can't, you're right.",
-    "writer": "Henry Ford"
+    "quote": "Time rewards those who invest it wisely instead of spending it carelessly.",
+    "author": "Jim Rohn"
   },
   {
-    "quote": "Happiness depends upon ourselves.",
-    "writer": "Aristotle"
+    "quote": "Your greatest competition is the person you were yesterday, not anyone else.",
+    "author": "Unknown"
   },
   {
-    "quote": "Dream big and dare to fail.",
-    "writer": "Norman Vaughan"
+    "quote": "Small improvements practiced every day eventually create results that seem impossible.",
+    "author": "James Clear"
   },
   {
-    "quote": "The best way to predict the future is to create it.",
-    "writer": "Peter Drucker"
+    "quote": "Courage is moving forward even when fear insists that you should stop.",
+    "author": "Nelson Mandela"
   },
   {
-    "quote": "Believe you can and you're halfway there.",
-    "writer": "Theodore Roosevelt"
+    "quote": "The quality of your life reflects the quality of your daily decisions.",
+    "author": "Stephen R. Covey"
   },
   {
-    "quote": "What we think, we become.",
-    "writer": "Buddha"
+    "quote": "Consistency will carry you farther than motivation ever promises to take you.",
+    "author": "Zig Ziglar"
   }
 ]
-
 
