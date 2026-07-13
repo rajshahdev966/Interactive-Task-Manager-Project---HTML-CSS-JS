@@ -248,4 +248,6 @@ setInterval(()=>{
     quoteWritter.innerHTML = `- ${allMotQuote[random].author}`;
 }, 10000)
 
+//POMODORO TIMER
+
 
