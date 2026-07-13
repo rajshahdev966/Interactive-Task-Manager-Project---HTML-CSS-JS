@@ -41,9 +41,7 @@ const doneTimeline = document.querySelector(".todo-done-timeline")
 
 
 
-let taskCollectionArr = [
-   
-];
+let taskCollectionArr = [];
 
 let deleteTask;
 let taskCheck;
@@ -59,15 +57,15 @@ let taskUpdateUI = ()=>{
                   <div>
                       <i class="ri-checkbox-blank-circle-line" id="checkbox" onclick="taskCheck(${index})"></i>
                       <!-- Make it checkbox-circle-line to make it filled -->
-                      <span id="task-text">${elem}</span>
+                      <span class="task-text">${elem}</span>
                   </div>
                   <i class="ri-delete-bin-line" onclick="deleteTask(${index})"></i>
                 </div>`
     })
     totalTaskCount.innerHTML = taskCollectionArr.length
 
-    allCheckBox = document.querySelectorAll("#checkbox")
-    allTaskText = document.querySelectorAll("#task-text")
+    allCheckBox = document.querySelectorAll(".checkbox")
+    allTaskText = document.querySelectorAll(".task-text")
 
 }
 taskUpdateUI();
@@ -77,6 +75,7 @@ taskAddForm.addEventListener('submit', (events)=>{
     events.preventDefault();
     if(newTaskInput.value.trim() == "") return;
     taskCollectionArr.push(newTaskInput.value);
+    localStorage.setItem
     taskUpdateUI();
     taskAddForm.reset();
 })
