@@ -41,11 +41,7 @@ const doneTimeline = document.querySelector(".todo-done-timeline")
 
 
 
-let taskCollectionArr = [
-    { text: "Complete DSA Practice", completed: false },
-    { text: "Go to GYM", completed: false },
-    { text: "Go to JEE Practice", completed: true }
-];
+let taskCollectionArr = localStorage.getItem('allTasks') ?? [];
 
 let deleteTask; 
 let taskCheck;
