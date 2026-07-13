@@ -270,6 +270,7 @@ pomoStartButton.addEventListener("click", () => {
       timeLeft = 2700;
       alert("Time's Up!");
       updateTimer();
+      pomoFunctions.innerHTML = ``
     }
     timeLeft--;
     updateTimer();
