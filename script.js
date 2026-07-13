@@ -255,7 +255,7 @@ const pomoOption2 = document.querySelector(".pomo-option2")
 const pomoTime = document.querySelector("#pomo-time")
 const pomoContext = document.querySelector("#pomo-context")
 const pomoStartButton = document.querySelector("#pomo-start")
-let timeLeft = 2700
+let timeLeft = 20
 let interval;
 
 pomoStartButton.addEventListener('click', ()=>{
@@ -270,7 +270,7 @@ pomoStartButton.addEventListener('click', ()=>{
   updateTimer();
 
   if(timeLeft === 0){
-    
+    clearInterval(interval)
     timeLeft = 2700;
     alert("Time's Up!")
     updateTimer();
