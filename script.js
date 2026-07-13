@@ -270,8 +270,8 @@ pomoStartButton.addEventListener("click", () => {
 
   pomoStopButton.addEventListener('click', ()=>{
     clearInterval(interval);
-    pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-play-fill" style="font-size: 28px;"></i> Start</button>`
-
+    pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-arrow-right-double-line" style="font-size: 28px;"></i> Continue</button>`
+    
   })
 
 
