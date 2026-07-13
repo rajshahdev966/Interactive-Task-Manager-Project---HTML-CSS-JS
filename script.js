@@ -42,9 +42,7 @@ const doneTimeline = document.querySelector(".todo-done-timeline")
 
 
 let taskCollectionArr = [
-    "Complete DSA Practice",
-    "Go to GYM",
-    "Go to JEE Practice",
+   
 ];
 
 let deleteTask;
@@ -87,6 +85,8 @@ deleteTask = (index)=>{
     taskCollectionArr.splice(index, 1);
     taskUpdateUI();
 }
+allCheckBox = document.querySelectorAll("#checkbox")
+allTaskText = document.querySelectorAll("#task-text")
 
 let allTickCheckBox;
 completedTaskCount.innerHTML = 0
