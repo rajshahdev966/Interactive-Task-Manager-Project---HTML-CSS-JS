@@ -87,6 +87,7 @@ allCheckBox = document.querySelectorAll("#checkbox")
 allTaskText = document.querySelectorAll("#task-text")
 
 let allTickCheckBox;
+completedTaskCount.innerHTML = 0
 
 
 taskCheck = (index)=>{    
