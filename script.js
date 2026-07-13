@@ -101,14 +101,8 @@ completedTaskCount.innerHTML = 0
 
 
 taskCheck = (index)=>{    
-    if(taskCollectionArr[index].completed){
-        allCheckBox[index].classList.replace('ri-checkbox-blank-circle-line', 'ri-checkbox-circle-line')
-        allTaskText[index].style.textDecoration = "line-through"
-    }else{
-        allCheckBox[index].classList.replace('ri-checkbox-circle-line', 'ri-checkbox-blank-circle-line')
-        allTaskText[index].style.textDecoration = "none"
-    }
-
+    taskCollectionArr[index].completed = !taskCollectionArr[index].completed
+    taskUpdateUI();
     allTickCheckBox = document.querySelectorAll(".ri-checkbox-circle-line")
     completedTaskCount.innerHTML = allTickCheckBox.length
     doneTimeline.style.width = `${((allTickCheckBox.length / taskCollectionArr.length)*100)}%`
