@@ -413,24 +413,25 @@ volumeSlider.addEventListener("input", (e2)=>{
 // THEME CHANGING LOGIC
 
 const themeButton = document.querySelector(".theme-but-div");
+const themeToggleButton = document.querySelector("#theme-toggle-button")
 const body = document.querySelector("body");
 
 const userModePref = localStorage.getItem("theme");
 const userPrefUpdate = ()=>{
   if(userModePref == "dark"){
-    themeButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
+    themeToggleButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
   }else{
-    themeButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
+    themeToggleButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
   }
 }
 
 themeButton.addEventListener("click", ()=>{
   if(body.classList.toggle("dark")){
     localStorage.setItem("theme", "dark");
-    themeButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
+    themeToggleButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
   }else{
     localStorage.setItem("theme", "light")
-    themeButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
+    themeToggleButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
   }
 
   
