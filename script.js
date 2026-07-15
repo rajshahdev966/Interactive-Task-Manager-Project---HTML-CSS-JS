@@ -242,51 +242,171 @@ setInterval(() => {
 
 //POMODORO TIMER
 
-const pomoOption1 = document.querySelector(".pomo-option1");
-const pomoOption2 = document.querySelector(".pomo-option2");
+const pomoOption1 = document.querySelector(".pomodoro-option1");
+const pomoOption2 = document.querySelector(".pomodoro-option2");
 const pomoTime = document.querySelector("#pomo-time");
 const pomoContext = document.querySelector("#pomo-context");
-const pomoStartButton = document.querySelector("#pomo-start");
+// let pomoStartButton = document.querySelector("#pomo-start");
 
-const pomoFunctions = document.querySelector(".pomo-funcs")
-
+const pomoFunctions = document.querySelector(".pomo-funcs");
+let pomoStopButton;
+let pomoResetButton;
 let timeLeft = 2700;
-let interval;
+let flag;
+pomoOption1.classList.add("selected")
 
-pomoStartButton.addEventListener("click", () => {
+document
+  .querySelector(".pomodoro-option1")
+  .addEventListener("click",  ()=>{
+    timeLeft = 2700
+    flag = true;
+    pomoOption1.classList.add("selected");
+    pomoOption2.classList.remove("selected");
+    updateTimer()
+  })
+
+document
+  .querySelector(".pomodoro-option2")
+  .addEventListener('click', ()=>{
+    timeLeft = 600
+    flag = false
+    pomoOption2.classList.add("selected");
+    pomoOption1.classList.remove("selected");
+    updateTimer()    
+})
+
+let showRunningButton = () => {
   pomoFunctions.innerHTML = `
           <div style="display: flex; gap: 10px;">
             <button id="pomo-stop"><i class="ri-square-fill" style="font-size: 25px;"></i> Stop</button>
             <button id="pomo-reset"><i class="ri-reset-left-line" style="font-size: 25px;"></i> Reset</button>
-          </div>`
-  const updateTimer = () => {
-    const mins = Math.floor(timeLeft / 60);
-    const seconds = timeLeft % 60;
-    pomoTime.innerHTML = `${mins.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-  };
+            </div>`;
+  
+  document
+    .querySelector("#pomo-stop")
+    .addEventListener('click', pauseTimer)
 
-  const pomoStopButton = document.querySelector("#pomo-stop")
-  const pomoResetButton = document.querySelector("#pomo-reset")
+  document
+    .querySelector("#pomo-reset")
+    .addEventListener('click', resetTimer)
+};
 
-  pomoStopButton.addEventListener('click', ()=>{
-    clearInterval(interval);
-    pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-arrow-right-double-line" style="font-size: 28px;"></i> Continue</button>`
+let updateTimer = () => {
+  const mins = Math.floor(timeLeft / 60);
+  const seconds = timeLeft % 60;
+  pomoTime.innerHTML = `${mins.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+};
+updateTimer();
+
+let interval; 
+
+let startTimer = ()=>{
+  showRunningButton();
+
+  clearInterval(interval)
+
+  interval = setInterval(()=>{
+
+  if(timeLeft <= 0){
+    alert("Time is Up!")
+    clearInterval(interval)
+    pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-play-fill" style="font-size: 28px;"></i> Start</button>`
+    return;
+  }
+
+  timeLeft--;
+  updateTimer();
+},1000)
+}
+
+let resetTimer = ()=>{
+  clearInterval(interval)
+  pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-play-fill" style="font-size: 28px;"></i> Start</button>`
+  if(flag){
+    timeLeft = 2700
+  }else{
+    timeLeft = 600
+  }
+  updateTimer();
+
+  document
+   .querySelector("#pomo-start")
+   .addEventListener("click", startTimer)
+}
+
+let pauseTimer = ()=>{
+  pomoFunctions.innerHTML = `<button id="pomo-continue"><i class="ri-arrow-right-double-line"></i>Continue</button>`
+
+  clearInterval(interval)
+
+  document
+    .querySelector("#pomo-continue")
+    .addEventListener('click', startTimer)
+}
+
+document
+  .querySelector("#pomo-start")
+  .addEventListener('click', startTimer)
+
+  // MUSIC PLAYER LOGIC 
+
+  const musicCurrentLength = document.querySelector("#music-current-length");
+  let timeOngoing = 0;
+  const playButton = document.querySelector(".play-circle")
+
+  const audio = new Audio('./audio.mp3');
+  const musicDoneTimeline = document.querySelector(".music-done-timeline")
+  let timeTotal = Math.floor(audio.duration)
+  let isPlaying = false;
+  let musicInterval 
+  
+  
+  const updateMusicTime = () => {
+    const mins = Math.floor(timeOngoing / 60);
+    const seconds = timeOngoing % 60;
+    musicCurrentLength.innerHTML = `${mins.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
     
-  })
+  };
+  const musicPause = ()=>{
+    audio.pause();
+    playButton.innerHTML = `<i class="ri-play-fill"></i>`;
+    isPlaying = false;
+  }
 
+const musicStart = ()=>{
+  audio.play();
+  playButton.innerHTML = `<i class="ri-pause-line"></i>`
+  isPlaying = true
 
-
-
-  interval = setInterval(() => {
-    if (timeLeft === 0) {
-      clearInterval(interval);
-      timeLeft = 2700;
-      alert("Time's Up!");
-      updateTimer();
-      pomoFunctions.innerHTML = `<button id="pomo-start"><i class="ri-play-fill" style="font-size: 28px;"></i> Start</button>`
+  clearInterval(musicInterval);
+  musicInterval = setInterval(()=>{
+    timeOngoing = Math.floor(audio.currentTime)
+    if(timeOngoing == timeTotal){
+      playButton.innerHTML = `<i class="ri-play-fill"></i>`
+      isPlaying = false;
+      clearInterval(musicInterval);
     }
-    timeLeft--;
-    updateTimer();
-  }, 1000);
-});
+    musicDoneTimeline.style.width = `${(timeOngoing/timeTotal)*100}%`
+    updateMusicTime();
+
+  },1000)
+}
+
+const playPause = ()=>{
+  if(isPlaying){
+    musicPause();
+  }else{
+    musicStart()
+  }
+
+}
+playButton.addEventListener('click', playPause)
+
+// Making Volume Slider 
+
+const volumeSlider = document.querySelector("#volume-slider")
+
+volumeSlider.addEventListener("input", (e2)=>{
+  audio.volume = volumeSlider.value
+})
 

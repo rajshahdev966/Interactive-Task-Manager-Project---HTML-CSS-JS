@@ -133,8 +133,8 @@
             <h2>Pomodoro Timer</h2>
           </div>
           <div class="pomo-timer-option">
-            <span class ="pomodoro-option1 selected" >Pomodoro</span>
-            <span class="pomodoro-option2">Short Break</span>
+            <span class ="pomodoro-option1" style="cursor: pointer;" >Pomodoro</span>
+            <span class="pomodoro-option2" style="cursor: pointer;">Short Break</span>
           </div>
           <div class="timer">
             <div class="total-timer-timeline">
@@ -163,36 +163,45 @@
             <span id="quote-writter">-Abraham Lincoln</span>
           </div>
         </div>
-        <!-- DAILY PLANNER SECTION -->
-        <div class="daily-planner">
-          <div class="daily-planner-head">
-            <div><i class="ri-calendar-2-line"></i></div>
-            <h2>Daily Planner </h2>
+        <!-- MUSIC PLAYER SECTION -->
+        <div class="music-player">
+          <div class="music-player-head">
+            <div><i class="ri-music-2-line"></i></div>
+            <h2>Music Player</h2>
+          </div>
+          <div class="music-player-img">
+            <img src="./music-player.png" alt="">
+          </div>
+          <div id="music-details">
+            <span>Night Prive</span>
+          </div>
+          <div class="music-timeline">
+                <div class="music-total-timeline">
+                  <div class="music-done-timeline"></div>
+                </div>
+          </div>
+          <div class="music-length">
+            <span id="music-current-length">00:00</span>
+            <span id="music-total-length">01:05</span>
+          </div>
+          <div class="player-funcs">
+            <i class="ri-skip-back-fill"></i>
+            <div class="play-circle"><i class="ri-play-fill"></i></div>
+            <i class="ri-skip-forward-fill"></i>
+          </div>
+          <div class="volume-container">
+            <i class="ri-volume-up-fill"></i>
+            <input 
+              type="range" 
+              id="volume-slider" 
+              min="0" 
+              max="1" 
+              step="0.01" 
+              value="0.5"
+            >
           </div>
 
-          <div class="daily-plan-collection">
-            <div class="daily-plan">
-              <span>6:00 a.m.</span>
-              <div id="plan">Morning Routine</div>
-            </div>
-            <div class="daily-plan">
-              <span>7:00 a.m.</span>
-              <div id="plan">Morning Routine</div>
-            </div>
-            <div class="daily-plan">
-              <span>8:00 a.m.</span>
-              <div id="plan">Morning Routine</div>
-            </div>
-            <div class="daily-plan">
-              <span>9:00 a.m.</span>
-              <div id="plan">Morning Routine</div>
-            </div>
-            <div class="daily-plan">
-              <span>10:00 a.m.</span>
-              <div id="plan">Morning Routine</div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </main>
 

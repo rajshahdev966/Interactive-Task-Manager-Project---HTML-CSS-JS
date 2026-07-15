@@ -229,7 +229,7 @@ main {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "to-do-list pomo-timer mot-section  daily-planner"
+    "to-do-list pomo-timer mot-section music-player"
     ;
     padding: 25px;
     gap: 20px;
@@ -291,6 +291,7 @@ main {
     border-radius: 8px;
     background-color: #5151f1;
     border: none;
+    width: min-content;
 }
 .to-do-head-task{
     display: flex;
@@ -311,6 +312,7 @@ main {
 }
 .todo-task i{
     font-size: 18px;
+    cursor:pointer;
 }
 .todo-completion-status{
     display: flex;
@@ -343,10 +345,10 @@ main {
 
 
 
-/* DAILY PLANNER SECTION */
+/* MUSIC PLAYER SECTION */
 
-.daily-planner{
-    grid-area: daily-planner;
+.music-player{
+    grid-area: music-player;
     background-color: #F7F8FB;
     display: flex;
     flex-direction: column;
@@ -356,38 +358,91 @@ main {
 
 
 }
-.daily-planner-head{
+.music-player-head{
     display: flex;
     align-items: center;
     gap: 10px;
     width: 100%;
 }
-.daily-planner-head i{
+.music-player-head i{
     padding: 7px;
     font-size: 30px;
     color: white;
     border-radius: 8px;
-    background-color: #3587FD;
+    background-color: #438BD4;
     border: none;
 }
-.daily-plan-collection{
-    height: 100%;
-    width: 100%;
-    padding: 15px 10px;
+.music-player-img{
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: -40px;
+    margin-top: -40px;
+    margin-bottom: -35px;
+}
+.music-player-img img{
+    height: 300px;
+    overflow: hidden;
+    transform: scale(140%);
+}
+#music-details span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.music-timeline{
+    display: flex;
+
+}
+.music-total-timeline{
+    background-color: rgba(65, 60, 60, 0.315);
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+.music-done-timeline{
+    background-color: #438BD4;
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.music-length {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(53, 50, 50, 0.699);
+}
+.player-funcs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
     gap: 15px;
 }
-.daily-plan{
+.play-circle{
+    background-color: #438BD4;
     display: flex;
-    gap: 10px;
-    text-wrap: none;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    aspect-ratio: 1; 
+    border-radius: 50%;
 }
-#plan{
-    background-color: rgb(163, 194, 139);
-    padding: 3px 8px;
-    border-radius: 5px;
-
+.play-circle i{
+    font-size: 45px;
+}
+.volume-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.volume-container i{
+    font-size: 20px;
+}
+.volume-container input{
+    width: 100%;
+    color: #438BD4;
 }
 
 /* MOTIVATIONAL QUOTE SECTION  */
@@ -499,6 +554,7 @@ main {
     border: none;
     background-color: #F35362;
     color: white;
+    cursor: pointer;
 
 }
 
