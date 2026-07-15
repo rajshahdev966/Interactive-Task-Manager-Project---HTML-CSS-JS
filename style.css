@@ -303,7 +303,7 @@ main {
     gap: 25px;
     font-size: 35px;
     border-radius: 15px;
-    coloe
+    color: var(--color-black);
 
 }
 
