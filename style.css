@@ -22,6 +22,7 @@
 
   /* text */
   --color-text: #333333;
+  --color-heading: #1a1a1a;
   --color-text-muted-1: rgba(0, 0, 0, 0.699);
   --color-text-muted-2: rgba(0, 0, 0, 0.644);
   --color-text-muted-3: rgba(0, 0, 0, 0.616);
@@ -32,6 +33,11 @@
 
   /* timelines */
   --color-timeline-track: rgba(65, 60, 60, 0.315);
+
+  /* backgrounds */
+  --bg-section: url(./ChatGPT\ Image\ Jul\ 11\,\ 2026\,\ 05_05_25\ PM.png);
+  --bg-mot-section: url(./ChatGPT\ Image\ Jul\ 12\,\ 2026\,\ 08_27_52\ AM.png);
+  --mot-overlay: rgba(0, 0, 0, 0);
 }
 
 body.dark {
@@ -57,6 +63,7 @@ body.dark {
 
   /* text */
   --color-text: #E7E9F2;
+  --color-heading: #F5F6FA;
   --color-text-muted-1: rgba(255, 255, 255, 0.699);
   --color-text-muted-2: rgba(255, 255, 255, 0.644);
   --color-text-muted-3: rgba(255, 255, 255, 0.616);
@@ -67,6 +74,11 @@ body.dark {
 
   /* timelines */
   --color-timeline-track: rgba(200, 200, 210, 0.315);
+
+  /* backgrounds */
+  --bg-section: url(./dark-themebg.png);
+  --bg-mot-section: url(./ChatGPT\ Image\ Jul\ 12\,\ 2026\,\ 08_27_52\ AM.png);
+  --mot-overlay: rgba(11, 18, 36, 0.72);
 }
 
 * {
@@ -98,7 +110,7 @@ section{
     align-items: center;
     height: 100%;
     width: 100%;
-    background-image: url(./ChatGPT\ Image\ Jul\ 11\,\ 2026\,\ 05_05_25\ PM.png);
+    background-image: var(--bg-section);
     background-size: cover;
 
 }
@@ -217,7 +229,7 @@ nav .nav-header {
 
 /* DESIGNING MAIN DIV OF DASHBOARD  */
 main {
-  background-image: url(./ChatGPT\ Image\ Jul\ 11\,\ 2026\,\ 05_05_25\ PM.png);
+  background-image: var(--bg-section);
   background-size: cover;
   width: calc(100% - 275px);
   border-top-left-radius: 60px;
@@ -236,6 +248,7 @@ main {
 .dashboard-head h2{
     font-size: 35px;
     font-weight: 450;
+    color: var(--color-heading);
 }
 .dashboard-head-greet{
     display: flex;
@@ -277,6 +290,7 @@ main {
 }
 .date-time-texts #time{
     font-size: 35px;
+    color: var(--color-heading);
 }
 
 /* THEME SELCECTION SECTION  */
@@ -307,6 +321,7 @@ main {
 }
 .dashboard-mid h2{
     font-size: 25px;
+    color: var(--color-heading);
 }
 
 /* TO-DO LIST SECTION DESIGNING  */
@@ -519,8 +534,9 @@ main {
 
 .mot-section{
     grid-area: mot-section;
-    background-image: url(./ChatGPT\ Image\ Jul\ 12\,\ 2026\,\ 08_27_52\ AM.png);
+    background-image: linear-gradient(var(--mot-overlay), var(--mot-overlay)), var(--bg-mot-section);
     background-size: cover;
+    background-blend-mode: normal;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -555,6 +571,7 @@ main {
 }
 .quote span{
     text-align: center;
+    color: var(--color-heading);
 }
 #quote-writter{
     color: var(--color-purple);
@@ -602,6 +619,7 @@ main {
     justify-content: center;
     flex-direction: column;
     font-size: 65px;
+    color: var(--color-heading);
 }
 .selected{
     color: var(--color-red);
