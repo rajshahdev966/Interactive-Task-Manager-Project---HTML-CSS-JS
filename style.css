@@ -77,7 +77,7 @@ body.dark {
 
   /* backgrounds */
   --bg-section: url(./dark-themebg.png);
-  --bg-mot-section: url(Gemini_Generated_Image_lpyc13lpyc13lpyc.jpeg);
+  --bg-mot-section: url(./dark-mot-bg.png);
   --mot-overlay: rgba(11, 18, 36, 0.72);
 }
 
