@@ -77,7 +77,7 @@ body.dark {
 
   /* backgrounds */
   --bg-section: url(./dark-themebg.png);
-  --bg-mot-section: url(./ChatGPT\ Image\ Jul\ 12\,\ 2026\,\ 08_27_52\ AM.png);
+  --bg-mot-section: url(Gemini_Generated_Image_lpyc13lpyc13lpyc.jpeg);
   --mot-overlay: rgba(11, 18, 36, 0.72);
 }
 
@@ -541,7 +541,7 @@ main {
 
 .mot-section{
     grid-area: mot-section;
-    background-image: linear-gradient(var(--mot-overlay), var(--mot-overlay)), var(--bg-mot-section);
+    background-image: var(--bg-mot-section);
     background-size: cover;
     background-blend-mode: normal;
     display: flex;
