@@ -1,3 +1,74 @@
+/* ROOT SECTION  */
+:root {
+  /* base */
+  --color-bg: #172546;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* brand / accent colours */
+  --color-primary: #3b66c4;
+  --color-indigo: #5151f1;
+  --color-blue: #5895FA;
+  --color-sky: #438BD4;
+  --color-purple: #9E8AF7;
+  --color-red: #F35362;
+
+  /* surfaces */
+  --color-surface: #F7F8FB;
+  --color-login-bg: rgba(255, 255, 255, 0.45);
+  --color-login-border: rgba(255, 255, 255, 0.6);
+  --color-login-shadow: rgba(0, 0, 0, 0.05);
+  --color-profile-border: rgba(255, 255, 255, 0.26);
+
+  /* text */
+  --color-text: #333333;
+  --color-text-muted-1: rgba(0, 0, 0, 0.699);
+  --color-text-muted-2: rgba(0, 0, 0, 0.644);
+  --color-text-muted-3: rgba(0, 0, 0, 0.616);
+  --color-text-muted-4: rgba(53, 50, 50, 0.699);
+  --color-border-muted-1: rgba(0, 0, 0, 0.466);
+  --color-border-muted-2: rgba(0, 0, 0, 0.26);
+  --color-border-muted-3: rgba(0, 0, 0, 0.15);
+
+  /* timelines */
+  --color-timeline-track: rgba(65, 60, 60, 0.315);
+}
+
+body.dark {
+  /* base */
+  --color-bg: #0B1224;
+  --color-white: #ffffff;
+  --color-black: #ffffff;
+
+  /* brand / accent colours */
+  --color-primary: #6f8fe0;
+  --color-indigo: #7373f5;
+  --color-blue: #74a9ff;
+  --color-sky: #63a3e8;
+  --color-purple: #b5a4fb;
+  --color-red: #ff6b78;
+
+  /* surfaces */
+  --color-surface: #1B2340;
+  --color-login-bg: rgba(23, 27, 46, 0.45);
+  --color-login-border: rgba(255, 255, 255, 0.15);
+  --color-login-shadow: rgba(0, 0, 0, 0.35);
+  --color-profile-border: rgba(255, 255, 255, 0.15);
+
+  /* text */
+  --color-text: #E7E9F2;
+  --color-text-muted-1: rgba(255, 255, 255, 0.699);
+  --color-text-muted-2: rgba(255, 255, 255, 0.644);
+  --color-text-muted-3: rgba(255, 255, 255, 0.616);
+  --color-text-muted-4: rgba(220, 220, 220, 0.699);
+  --color-border-muted-1: rgba(255, 255, 255, 0.466);
+  --color-border-muted-2: rgba(255, 255, 255, 0.26);
+  --color-border-muted-3: rgba(255, 255, 255, 0.15);
+
+  /* timelines */
+  --color-timeline-track: rgba(200, 200, 210, 0.315);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -12,12 +83,11 @@ body {
   font-optical-sizing: auto;
 }
 body {
-  background-color: #172546;
+  background-color: var(--color-bg);
   display: flex;
   gap: 20px;
 }
 
-/* ROOT SECTION  */
 
 
 /* ENTRY PAGE LOGIN */
@@ -41,15 +111,15 @@ section form{
 
 .login-form{
     padding: 20px;
-    background: rgba(255, 255, 255, 0.45);
+    background: var(--color-login-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.6);
+    border: 1px solid var(--color-login-border);
     padding: 40px;
     border-radius: 28px;
     width: 90%;
     max-width: 440px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 40px var(--color-login-shadow);
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -57,7 +127,7 @@ section form{
 }
 .login-form h2{
     font-size: 30px;
-    color: #3b66c4;
+    color: var(--color-primary);
     font-size: 26px;
     font-weight: 600;
 }
@@ -68,18 +138,18 @@ form input{
     width: 100%;
     padding: 14px 16px;
     border-radius: 12px;
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 1px solid var(--color-border-muted-3);
     background: rgba(255, 255, 255, 0.6);
     font-size: 15px;
-    color: #333;
+    color: var(--color-text);
     outline: none;
     transition: all 0.2s ease;
 }
 form button{
     width: 100%;
     padding: 14px;
-    background: #3b66c4;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-white);
     border: none;
     border-radius: 25px;
     font-size: 15px;
@@ -94,7 +164,7 @@ form button{
 /* NAVIGATION BAR STYLING */
 
 nav {
-  color: white;
+  color: var(--color-white);
   font-size: 18px;
   padding: 30px 20px;
   display: flex;
@@ -126,7 +196,7 @@ nav .nav-header {
 }
 /* FOR SELECTION OF NAV BAR  */
 .nav-buttons:nth-child(1) {
-  background-color: #5151f1;
+  background-color: var(--color-indigo);
   border-radius: 10px;
 }
 
@@ -135,12 +205,12 @@ nav .nav-header {
   display: flex;
   gap: 15px;
   align-items: center;
-  border: solid rgba(255, 255, 255, 0.26) 1px;
+  border: solid var(--color-profile-border) 1px;
   border-radius: 10px;
   padding: 12px 15px;
 }
 .profile-initial {
-  background-color: #5151f1;
+  background-color: var(--color-indigo);
   padding: 12px 16px;
   border-radius: 50%;
 }
@@ -171,7 +241,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 7px;
-    color: rgba(0, 0, 0, 0.699);
+    color: var(--color-text-muted-1);
 }
 
 /* FUNCTIONALITIES OF HEAD SECTION  */
@@ -184,7 +254,7 @@ main {
 /* DATE TIME SECTION */
 .date-time{
     height: 100%;
-    background-color: #F7F8FB;
+    background-color: var(--color-surface);
     display: flex;
     gap: 15px;
     align-items: center;
@@ -193,7 +263,7 @@ main {
     border-radius: 15px;
 }
 .date-time i{
-    color: #5895FA;
+    color: var(--color-blue);
     font-size: 35px;
 }
 .date-time-texts{
@@ -203,7 +273,7 @@ main {
 
 }
 .date-time-texts .day-date{
-    color: rgba(0, 0, 0, 0.644);
+    color: var(--color-text-muted-2);
 }
 .date-time-texts #time{
     font-size: 35px;
@@ -212,7 +282,7 @@ main {
 /* THEME SELCECTION SECTION  */
 .theme-selection{
     padding: 15px 40px;
-    background-color: #F7F8FB;
+    background-color: var(--color-surface);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -243,7 +313,7 @@ main {
 
 .to-do-list{
     grid-area: to-do-list;
-    background-color: #F7F8FB;
+    background-color: var(--color-surface);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -261,9 +331,9 @@ main {
 .todo-head i{
     padding: 7px;
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
     border-radius: 8px;
-    background-color: #5151f1;
+    background-color: var(--color-indigo);
     border: none;
 }
 .todo-form{   
@@ -277,7 +347,7 @@ main {
 }
 .todo-form input{
     font-size: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.466);
+    border: 1px solid var(--color-border-muted-1);
     padding: 7px 10px;
     border-radius: 5px;
     width: 100%;
@@ -287,9 +357,9 @@ main {
     height: 100%;
     padding: 5px 6px;
     font-size: 22px;
-    color: white;
+    color: var(--color-white);
     border-radius: 8px;
-    background-color: #5151f1;
+    background-color: var(--color-indigo);
     border: none;
     width: min-content;
 }
@@ -305,7 +375,7 @@ main {
 }
 .todo-task-collection .todo-task{
     padding: 8px;
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.26);
+    border-bottom: 0.5px solid var(--color-border-muted-2);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -320,7 +390,7 @@ main {
     flex-direction: column;
 }
 .todo-completion-status p{
-    color: rgba(0, 0, 0, 0.616);
+    color: var(--color-text-muted-3);
     font-size: 15px;
     width: 100%;
     
@@ -331,13 +401,13 @@ main {
 
 }
 .todo-total-timeline{
-    background-color: rgba(65, 60, 60, 0.315);
+    background-color: var(--color-timeline-track);
     width: 100%;
     height: 10px;
     border-radius: 5px;
 }
 .todo-done-timeline{
-    background-color: #5151f1;
+    background-color: var(--color-indigo);
     height: 10px;
     border-radius: 5px;
     width: 0%;
@@ -349,7 +419,7 @@ main {
 
 .music-player{
     grid-area: music-player;
-    background-color: #F7F8FB;
+    background-color: var(--color-surface);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -367,9 +437,9 @@ main {
 .music-player-head i{
     padding: 7px;
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
     border-radius: 8px;
-    background-color: #438BD4;
+    background-color: var(--color-sky);
     border: none;
 }
 .music-player-img{
@@ -395,13 +465,13 @@ main {
 
 }
 .music-total-timeline{
-    background-color: rgba(65, 60, 60, 0.315);
+    background-color: var(--color-timeline-track);
     width: 100%;
     height: 10px;
     border-radius: 5px;
 }
 .music-done-timeline{
-    background-color: #438BD4;
+    background-color: var(--color-sky);
     height: 10px;
     border-radius: 5px;
     width: 0%;
@@ -409,7 +479,7 @@ main {
 .music-length {
     display: flex;
     justify-content: space-between;
-    color: rgba(53, 50, 50, 0.699);
+    color: var(--color-text-muted-4);
 }
 .player-funcs{
     display: flex;
@@ -419,7 +489,7 @@ main {
     gap: 15px;
 }
 .play-circle{
-    background-color: #438BD4;
+    background-color: var(--color-sky);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -442,7 +512,7 @@ main {
 }
 .volume-container input{
     width: 100%;
-    color: #438BD4;
+    color: var(--color-sky);
 }
 
 /* MOTIVATIONAL QUOTE SECTION  */
@@ -465,9 +535,9 @@ main {
 .mot-section-head i{
     padding: 7px;
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
     border-radius: 8px;
-    background-color: #9E8AF7;
+    background-color: var(--color-purple);
     border: none;
 }
 .quote{
@@ -480,21 +550,21 @@ main {
 }
 .quote i{
     font-size: 55px;
-    color: #9E8AF7;
+    color: var(--color-purple);
     margin-bottom: ;
 }
 .quote span{
     text-align: center;
 }
 #quote-writter{
-    color: #9E8AF7;
+    color: var(--color-purple);
 }
 
 /* POMODORO TIMER UI STYLING  */
 
 .pomo-timer{
     grid-area: pomo-timer;
-    background-color: #F7F8FB;
+    background-color: var(--color-surface);
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -511,9 +581,9 @@ main {
 .pomo-timer-head i{
     padding: 7px;
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
     border-radius: 8px;
-    background-color: #F35362;
+    background-color: var(--color-red);
     border: none;
 }
 .pomo-timer-option{
@@ -522,7 +592,7 @@ main {
     padding: 10px;
 }
 .total-timer-timeline{
-    border: 5px solid black;
+    border: 5px solid var(--color-black);
     height: 250px;
     width: 250px;
     justify-self: center;
@@ -534,9 +604,9 @@ main {
     font-size: 65px;
 }
 .selected{
-    color: #F35362;
+    color: var(--color-red);
     font-weight: 500;
-    border-bottom: 1px solid #F35362;
+    border-bottom: 1px solid var(--color-red);
     padding-bottom: 10px;
 }
 .pomo-timer button{
@@ -552,9 +622,8 @@ main {
     gap: 5px;
     border-radius: 10px;
     border: none;
-    background-color: #F35362;
-    color: white;
+    background-color: var(--color-red);
+    color: var(--color-white);
     cursor: pointer;
 
 }
-
