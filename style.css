@@ -473,7 +473,7 @@ main {
 #music-details span{
     font-size: 20px;
     font-weight: 600;
-    color
+    color: var(--color-black)
 }
 
 .music-timeline{
@@ -515,6 +515,8 @@ main {
 }
 .play-circle i{
     font-size: 45px;
+    color: var(--color-black);
+    
 }
 .volume-container{
     width: 100%;
