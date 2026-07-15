@@ -386,6 +386,7 @@ const musicStart = ()=>{
       isPlaying = false;
       clearInterval(musicInterval);
     }
+    
     musicDoneTimeline.style.width = `${(timeOngoing/timeTotal)*100}%`
     updateMusicTime();
 
