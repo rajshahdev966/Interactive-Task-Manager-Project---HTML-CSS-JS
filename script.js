@@ -417,6 +417,8 @@ const body = document.querySelector("body");
 
 
 themeButton.addEventListener("click", ()=>{
-  body.classList.toggle("dark");
+  if(body.classList.toggle("dark")){
+    console.log(body.classList.toggle("dark"))
+  }
 
 })
