@@ -412,8 +412,9 @@ volumeSlider.addEventListener("input", (e2)=>{
 
 // THEME CHANGING LOGIC
 
-const themeButton = document.querySelector(".ri-toggle-line");
+const themeButton = document.querySelector(".theme-but-div");
 const body = document.querySelector("body");
+
 
 
 themeButton.addEventListener("click", ()=>{
@@ -424,7 +425,7 @@ themeButton.addEventListener("click", ()=>{
     localStorage.setItem("theme", "light")
     themeButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
   }
-    
+
   
 
 })
