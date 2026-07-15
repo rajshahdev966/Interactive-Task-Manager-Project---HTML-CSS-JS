@@ -420,10 +420,12 @@ const userModePref = localStorage.getItem("theme");
 const userPrefUpdate = ()=>{
   if(userModePref == "dark"){
     themeToggleButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
+    body.classList.add()
   }else{
     themeToggleButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
   }
 }
+userPrefUpdate()
 
 themeButton.addEventListener("click", ()=>{
   if(body.classList.toggle("dark")){
