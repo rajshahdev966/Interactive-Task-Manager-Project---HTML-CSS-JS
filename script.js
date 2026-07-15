@@ -420,9 +420,10 @@ const userModePref = localStorage.getItem("theme");
 const userPrefUpdate = ()=>{
   if(userModePref == "dark"){
     themeToggleButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
-    body.classList.add()
+    body.classList.add("dark")
   }else{
     themeToggleButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
+    body.classList.remove("dark")
   }
 }
 userPrefUpdate()
