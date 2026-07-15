@@ -410,3 +410,13 @@ volumeSlider.addEventListener("input", (e2)=>{
   audio.volume = volumeSlider.value
 })
 
+// THEME CHANGING LOGIC
+
+const themeButton = document.querySelector(".ri-toggle-line");
+const body = document.querySelector("body");
+
+
+themeButton.addEventListener("click", ()=>{
+  body.classList.toggle("dark");
+
+})
