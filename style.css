@@ -35,8 +35,8 @@
   --color-timeline-track: rgba(65, 60, 60, 0.315);
 
   /* backgrounds */
-  --bg-section: url(./ChatGPT\ Image\ Jul\ 11\,\ 2026\,\ 05_05_25\ PM.png);
-  --bg-mot-section: url(./ChatGPT\ Image\ Jul\ 12\,\ 2026\,\ 08_27_52\ AM.png);
+  --bg-section: url(./light-bg.png);
+  --bg-mot-section: url(./light-mot-bg.png);
   --mot-overlay: rgba(0, 0, 0, 0);
 }
 
@@ -76,7 +76,7 @@ body.dark {
   --color-timeline-track: rgba(200, 200, 210, 0.315);
 
   /* backgrounds */
-  --bg-section: url(./dark-themebg.png);
+  --bg-section: url(./dark-bg.png);
   --bg-mot-section: url(./dark-mot-bg.png);
   --mot-overlay: rgba(11, 18, 36, 0.72);
 }
