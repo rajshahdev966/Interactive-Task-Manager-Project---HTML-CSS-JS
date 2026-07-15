@@ -366,7 +366,6 @@ main {
     padding: 7px 10px;
     border-radius: 5px;
     width: 100%;
-    
 }
 .todo-form button{
     height: 100%;
@@ -387,6 +386,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    color: var(--color-black);
 }
 .todo-task-collection .todo-task{
     padding: 8px;
@@ -565,7 +565,6 @@ main {
 .quote{
     display: flex;
     flex-direction: column;
-    /* background-color: wheat; */
     padding: 25px;
     height: 100%;
     gap: 15px;
@@ -593,6 +592,7 @@ main {
     gap: 15px;
     padding: 20px; 
     border-radius: 20px;
+    color: var(--color-black);
 
 }
 .pomo-timer-head{
