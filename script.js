@@ -415,7 +415,8 @@ volumeSlider.addEventListener("input", (e2)=>{
 const themeButton = document.querySelector(".theme-but-div");
 const body = document.querySelector("body");
 
-  
+const userModePref = localStorage.getItem("theme");
+
 
 themeButton.addEventListener("click", ()=>{
   if(body.classList.toggle("dark")){
