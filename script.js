@@ -353,10 +353,13 @@ document
   const musicCurrentLength = document.querySelector("#music-current-length");
   let timeOngoing = 0;
   const playButton = document.querySelector(".play-circle")
-
+  let timeTotal = 0;
   const audio = new Audio('./audio.mp3');
   const musicDoneTimeline = document.querySelector(".music-done-timeline")
-  let timeTotal = Math.floor(audio.duration)
+  audio.addEventListener("loadedmetadata", ()=>{
+    timeTotal = Math.floor(audio.duration)
+  })
+  
   let isPlaying = false;
   let musicInterval 
   
