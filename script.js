@@ -416,7 +416,13 @@ const themeButton = document.querySelector(".theme-but-div");
 const body = document.querySelector("body");
 
 const userModePref = localStorage.getItem("theme");
-
+const userPrefUpdate = ()=>{
+  if(userModePref == "dark"){
+    themeButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
+  }else{
+    themeButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
+  }
+}
 
 themeButton.addEventListener("click", ()=>{
   if(body.classList.toggle("dark")){
