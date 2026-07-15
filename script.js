@@ -418,7 +418,11 @@ const body = document.querySelector("body");
 
 themeButton.addEventListener("click", ()=>{
   if(body.classList.toggle("dark")){
-    localStorage.setItem("theme", "dark")
+    localStorage.setItem("theme", "dark");
+    themeButton.classList.replace("ri-toggle-line", "ri-toggle-fill")
+  }else{
+    localStorage.setItem("theme", "light")
+    themeButton.classList.replace("ri-toggle-fill", "ri-toggle-line")
   }
     
   
