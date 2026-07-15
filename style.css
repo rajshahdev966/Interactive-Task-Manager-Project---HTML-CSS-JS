@@ -112,6 +112,8 @@ section{
     width: 100%;
     background-image: var(--bg-section);
     background-size: cover;
+    
+    z-index: 500;
 
 }
 section form{
@@ -470,6 +472,8 @@ main {
     height: 300px;
     overflow: hidden;
     transform: scale(140%);
+    position: relative;
+    z-index: 0;
 }
 #music-details span{
     font-size: 20px;
